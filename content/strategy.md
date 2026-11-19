@@ -101,9 +101,14 @@ Running from December 2026:
 
 | Name | Hypothesis | Metric | Arms | Judged at |
 |---|---|---|---|---|
-| `tt-pace` | A 1.5s hook and quicker reveals (15–20s videos) hold a bigger share of the video than the standard pace | avg watch % of length | standard, fast | 4 per arm (Jan) |
-| `ig-feed-format` | Carousels earn more saves than single verse images | saves per 100 reach | carousel, image | 4 per arm (Jan) |
-| `tt-format` | Photo-mode carousels reach as many people as videos on a new account | reach per post, saves per 100 reach | video, photo | 4 photo posts (Feb) |
+| `tt-pace` | A 1.5s hook and quicker reveals (15–20s videos) hold a bigger share of the video than the standard pace | avg watch % of length | standard, fast | 4+ judgeable posts per arm |
+| `ig-feed-format` | Carousels earn more saves than single verse images | saves per 100 reach | carousel, image | 4+ judgeable posts per arm |
+| `tt-format` | Photo-mode carousels reach as many people as videos on a new account | reach per post, saves per 100 reach | video, photo | 4+ judgeable photo posts |
+
+Experiments carry across packs until every arm has its minimum. December runs 3 standard + 3 fast (`tt-pace`) and 2 + 2
+(`ig-feed-format`); January adds at least 1 more per `tt-pace` arm and 2 more per `ig-feed-format` arm, keeping the same
+experiment names so the posts pool. No winner is declared, and nothing in the playbook changes, until `tools/analyze.py`
+labels the comparison a FINDING. If January still falls short (for example, posts too new to judge), keep going in February.
 
 ## What we know (FINDINGS only)
 

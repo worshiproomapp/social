@@ -85,6 +85,20 @@ def compare(rs, key, num, label):
     return [f"- {label} by {key}: {tag}"] + lines
 
 
+def watch_compare(rs):
+    """Average watch as a share of video length, per arm (the tt-pace metric). Same FINDING rules."""
+    groups = defaultdict(list)
+    for r in rs:
+        if r['arm'] and r['watch'] is not None and r['seconds']: groups[r['arm']].append(r['watch'] / r['seconds'])
+    if len(groups) < 2: return []
+    rates = {a: (sum(v) / len(v), len(v)) for a, v in groups.items()}
+    ok = all(n >= MIN_POSTS for _, n in rates.values())
+    vals = sorted((v for v, _ in rates.values()), reverse=True)
+    strong = ok and vals[-1] > 0 and vals[0] / vals[-1] >= RATIO
+    tag = 'FINDING' if strong else 'HYPOTHESIS (fewer than %d posts per arm or gap under %.1fx; no winner yet)' % (MIN_POSTS, RATIO)
+    return [f"- average watch % by arm: {tag}"] + [f"  - {a}: {n} posts, {v * 100:.0f}% of length on average" for a, (v, n) in sorted(rates.items())]
+
+
 def report(rs):
     L = [f"# Performance report, {dt.date.today().isoformat()}", '',
          f"Rules: findings need >= {MIN_POSTS} posts and >= {MIN_DENOM} reach/impressions per group and a >= {RATIO}x gap. "
@@ -109,9 +123,16 @@ def report(rs):
             tot = sum(r['denom'] for r in ready)
             L += [f"Totals (judgeable posts): {fmt(sum(r['saves'] for r in ready), tot, 'saves')}; "
                   f"{fmt(sum(r['shares'] for r in ready), tot, 'shares')}; {fmt(sum(r['comments'] for r in ready), tot, 'comments')}", '']
-            for key in ('kind', 'purpose', 'topic', 'arm'):
+            for key in ('kind', 'purpose', 'topic'):
                 for num, label in (('saves', 'saves'), ('shares', 'shares')):
                     L += compare(ready, key, num, label)
+            for exp in sorted({r['exp'] for r in ready if r['exp']}):
+                er = [r for r in ready if r['exp'] == exp]
+                L.append(f"- experiment {exp}: " + ', '.join(f"{a} {sum(r['arm'] == a for r in er)} judgeable posts" for a in sorted({r['arm'] for r in er})))
+                if exp.startswith('tt-pace') or ch == 'tiktok':
+                    L += watch_compare(er)
+                for num, label in (('saves', 'saves'), ('shares', 'shares')):
+                    L += compare(er, 'arm', num, label)
             L.append('')
     L += ['## Not measured here', '',
           '- Buffer does not return TikTok/Instagram profile visits, link-in-bio taps, retention curves, or Pinterest outbound clicks reliably; check native analytics.',
