@@ -1,0 +1,138 @@
+diff -ruN a/package.json b/package.json
+--- a/package.json	2026-11-19 12:55:37.391293467 -0600
++++ b/package.json	2026-11-19 13:31:40.689853817 -0600
+@@ -11,6 +11,8 @@
+     "secret:turnstile": "wrangler secret put TURNSTILE_SECRET_KEY",
+     "list:count": "wrangler d1 execute worshiproom-waitlist --remote --command \"SELECT COUNT(*) AS subscribers FROM subscribers\"",
+     "list:export": "wrangler d1 execute worshiproom-waitlist --remote --json --command \"SELECT email, created_at FROM subscribers ORDER BY created_at\" > subscribers.json && node scripts/to-csv.mjs subscribers.json subscribers.csv",
++    "list:sources": "wrangler d1 execute worshiproom-waitlist --remote --command \"SELECT COALESCE(utm_source, '(none)') AS platform, utm_campaign AS campaign, utm_content AS post, landing_path AS landed_on, source AS signed_up_on, COUNT(*) AS signups FROM subscribers GROUP BY 1, 2, 3, 4, 5 ORDER BY signups DESC\"",
++    "list:landings": "wrangler d1 execute worshiproom-waitlist --remote --command \"SELECT utm_source AS platform, utm_content AS post, path, SUM(visits) AS visits FROM landings GROUP BY 1, 2, 3 ORDER BY visits DESC\"",
+     "list:delete-all": "wrangler d1 execute worshiproom-waitlist --remote --command \"DELETE FROM subscribers\""
+   },
+   "private": true,
+diff -ruN a/public/app.js b/public/app.js
+--- a/public/app.js	2026-11-19 12:55:37.370346549 -0600
++++ b/public/app.js	2026-11-19 13:31:40.687672682 -0600
+@@ -5,6 +5,34 @@
+ const TURNSTILE_SITE_KEY = '0x4AAAAAAFxbAsn_hmHd0YC1';
+ const TURNSTILE_TEST_KEY = '1x00000000000000000000BB'; // invisible, always passes
+ const STORAGE_KEY = 'wr_waitlist_joined';
++const ATTR_KEY = 'wr_utm'; // sessionStorage only: gone when the tab closes. No cookie, nothing about the person.
++
++// First-touch attribution from a tracked social link (?utm_source=pinterest&utm_content=2026-12-pin-03…).
++// Keeps only short lowercase labels, then removes them from the address bar so shared links stay clean.
++const attribution = (() => {
++  const UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
++  const params = new URLSearchParams(location.search);
++  const found = {};
++  for (const k of UTM) {
++    const v = (params.get(k) || '').toLowerCase();
++    if (/^[a-z0-9_\-]{1,60}$/.test(v)) found[k.slice(4)] = v;
++  }
++  let stored = null;
++  try { stored = JSON.parse(sessionStorage.getItem(ATTR_KEY) || 'null'); } catch { /* storage unavailable */ }
++  if (found.source && !stored) {
++    found.landing = location.pathname; // the page the tracked link opened
++    stored = found;
++    try { sessionStorage.setItem(ATTR_KEY, JSON.stringify(found)); } catch { /* ignore */ }
++    // One aggregate count per tracked landing (no email, no IP, no identifier). See /api/landing in the Worker.
++    try { navigator.sendBeacon('/api/landing', JSON.stringify(found)); } catch { /* ignore */ }
++  }
++  if (UTM.some((k) => params.has(k))) {
++    UTM.forEach((k) => params.delete(k));
++    const q = params.toString();
++    history.replaceState(history.state, '', location.pathname + (q ? '?' + q : '') + location.hash);
++  }
++  return stored;
++})();
+ 
+ const isLocal = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+ const siteKey = isLocal ? TURNSTILE_TEST_KEY : TURNSTILE_SITE_KEY;
+@@ -325,7 +353,7 @@
+         const res = await fetch('/api/subscribe', {
+           method: 'POST',
+           headers: { 'content-type': 'application/json' },
+-          body: JSON.stringify({ email, token, website: honeypot.value, source: location.pathname }),
++          body: JSON.stringify({ email, token, website: honeypot.value, source: location.pathname, attribution }),
+         });
+         if (res.ok) {
+           try { localStorage.setItem(STORAGE_KEY, '1'); } catch { /* ignore */ }
+diff -ruN a/public/privacy-policy.html b/public/privacy-policy.html
+--- a/public/privacy-policy.html	2026-11-19 12:55:37.383726210 -0600
++++ b/public/privacy-policy.html	2026-11-19 13:31:40.688979183 -0600
+@@ -26,7 +26,8 @@
+ 
+     <h2>What we keep</h2>
+     <ul>
+-      <li>Your email address, the date you signed up, and which page of this site you signed up on. Nothing else: no name, no IP address, no tracking cookies.</li>
++      <li>Your email address, the date you signed up, which page of this site you signed up on, and, if you arrived through a link in one of our social posts, the labels in that link (for example, which platform and which post) and the page it opened. Nothing else: no name, no IP address, no tracking cookies.</li>
++      <li>When someone arrives through a link in one of our social posts, we add one to a daily count for that link. The count holds no email, IP address, or anything that identifies a person.</li>
+       <li>It's stored in a private database in Worship Room's own Cloudflare account.</li>
+     </ul>
+ 
+diff -ruN a/src/worker.js b/src/worker.js
+--- a/src/worker.js	2026-11-19 12:55:37.376773178 -0600
++++ b/src/worker.js	2026-11-19 13:31:40.688703577 -0600
+@@ -24,6 +24,7 @@
+ 
+     if (url.pathname === '/api/subscribe') return handle(request, env, subscribe);
+     if (url.pathname === '/api/unsubscribe') return handle(request, env, unsubscribe);
++    if (url.pathname === '/api/landing') return landing(request, env);
+     if (url.pathname.startsWith('/api/')) return json({ error: 'Not found.' }, 404);
+ 
+     // Anything else falls through to the static site.
+@@ -71,8 +72,9 @@
+ 
+   // Duplicate sign-ups are silently accepted so the response never reveals who is on the list.
+   await env.DB.prepare(
+-    'INSERT INTO subscribers (email, source) VALUES (?1, ?2) ON CONFLICT(email) DO NOTHING'
+-  ).bind(email, signupSource(body.source)).run();
++    'INSERT INTO subscribers (email, source, utm_source, utm_medium, utm_campaign, utm_content, utm_term, landing_path) ' +
++    'VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) ON CONFLICT(email) DO NOTHING'
++  ).bind(email, signupSource(body.source), ...utmFields(body.attribution), landingPath(body.attribution)).run();
+ 
+   return json({ ok: true });
+ }
+@@ -84,6 +86,42 @@
+   return 'coming-soon:' + path;
+ }
+ 
++// Which social post sent the person, from the tracked link they arrived on (labels we wrote, not data about them).
++// Anything that isn't a short lowercase label is dropped.
++function utmFields(a) {
++  const ok = (v) => (typeof v === 'string' && /^[a-z0-9_\-]{1,60}$/.test(v) ? v : null);
++  a = a && typeof a === 'object' ? a : {};
++  return [ok(a.source), ok(a.medium), ok(a.campaign), ok(a.content), ok(a.term)];
++}
++
++// The page the tracked link opened (a plain path), or null when there was no tracked link.
++function landingPath(a) {
++  const p = a && typeof a === 'object' ? a.landing : null;
++  return typeof p === 'string' && /^\/[a-z0-9\-\/]{0,100}$/.test(p) && utmFields(a)[0] ? p : null;
++}
++
++// Aggregate landing counter for tracked links: one row per day + labels, a number that goes up. No email,
++// IP, cookie or identifier is stored. Counts can be inflated by anyone who calls the endpoint, so read
++// them as directional, and compare with Cloudflare Web Analytics referrers.
++async function landing(request, env) {
++  if (request.method !== 'POST' || !isAllowedOrigin(request.headers.get('Origin'))) return new Response(null, { status: 204 });
++  let body = {};
++  try { body = JSON.parse(await request.text()); } catch { return new Response(null, { status: 204 }); }
++  const [source, medium, campaign, content, term] = utmFields(body);
++  const path = landingPath(body) || '/';
++  if (!source) return new Response(null, { status: 204 });
++  try {
++    await env.DB.prepare(
++      'INSERT INTO landings (day, path, utm_source, utm_medium, utm_campaign, utm_content, utm_term, visits) ' +
++      "VALUES (date('now'), ?1, ?2, ?3, ?4, ?5, ?6, 1) " +
++      'ON CONFLICT(day, path, utm_source, utm_medium, utm_campaign, utm_content, utm_term) DO UPDATE SET visits = visits + 1'
++    ).bind(path, source, medium || '', campaign || '', content || '', term || '').run();
++  } catch (err) {
++    console.error('landing_error', err && err.message);
++  }
++  return new Response(null, { status: 204 });
++}
++
+ async function unsubscribe({ env, email }) {
+   await env.DB.prepare('DELETE FROM subscribers WHERE email = ?1').bind(email).run();
+   // Same answer whether or not the address existed.

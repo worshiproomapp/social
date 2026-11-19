@@ -62,7 +62,7 @@ measures which topic sent the person (self-selected by the tile they tap), not w
 
 ## Website attribution (drafted, owner approval needed)
 
-`proposals/attribution/` in the coming-soon folder: cookieless first-touch capture of the UTM fields in sessionStorage,
+`proposals/site-attribution/` in this repo (optional; applies to the coming-soon site): cookieless first-touch capture of the UTM fields in sessionStorage,
 sent with the signup and stored in new D1 columns, plus the privacy policy sentence that has to change with it.
 Not deployed. Until it is, platform-level traffic comes from Cloudflare's referrer report (pinterest.com,
 tiktok.com, instagram.com / l.instagram.com) and guide-level signups from `npm run list:count` / D1 `source`.
