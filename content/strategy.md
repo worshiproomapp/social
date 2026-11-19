@@ -21,7 +21,7 @@ Worship Room opens mid-2027. Until then every post has one of three purposes, an
 | Engagement (watch time, saves, shares, comments) | Buffer metrics per post | Yes. No retention curve. |
 | Profile visit / link-in-bio tap | TikTok and Instagram native analytics | Owner only; not in Buffer |
 | Outbound click | Pinterest native analytics | Owner only; Buffer "Pin Clicks" are closeups, not link clicks |
-| Website visit | Cloudflare Web Analytics on worshiproom.com (path, referrer host, country) | Yes, owner dashboard. As far as we could verify, it does not report UTM parameters. |
+| Website visit | Cloudflare Web Analytics on worshiproom.com (path, referrer host, country) | Yes, owner dashboard. It does not log query strings, so it never sees UTM labels (official FAQ, checked 2026-11-19). |
 | Guide engagement | Same, by guide path | Yes, page views only |
 | Waitlist signup | D1 `subscribers.source` = `coming-soon:<path>` | Yes, by page. Not by platform or post. |
 
@@ -45,6 +45,20 @@ utm_source=<tiktok|instagram|pinterest>&utm_medium=social&utm_campaign=<YYYY-MM>
   - TikTok (if the profile link field is available): `https://worshiproom.com/?utm_source=tiktok&utm_medium=social&utm_campaign=profile&utm_content=bio`
   - Pinterest profile website: `https://worshiproom.com/?utm_source=pinterest&utm_medium=social&utm_campaign=profile&utm_content=bio`
 - Until the website attribution patch ships, UTMs are recorded nowhere; they are harmless, and they start counting the day it ships.
+
+### What can actually be attributed
+
+| Platform | Click path | Finest attribution we can measure |
+|---|---|---|
+| Pinterest | every pin links to its guide with its own tracked link | the individual pin (post id), its guide, landing page and signup page |
+| Instagram | captions aren't clickable; the bio link is shared by every post | the platform only (`utm_content=bio`) |
+| TikTok | same, and the bio link field may not be available yet | the platform only, once a bio link exists |
+
+Post-level performance on Instagram and TikTok comes from in-app metrics (reach, watch time, saves, shares), not from site visits
+or signups. Never report an Instagram or TikTok signup as coming from a specific post.
+Possible upgrade (needs the owner's approval; a one-time website change): a `worshiproom.com/links` page as the bio link, with one
+tile per guide topic, each carrying `utm_content=bio-<guide slug>`, and captions that end "Link in bio: <guide name>". That
+measures which topic sent the person (self-selected by the tile they tap), not which post.
 
 ## Website attribution (drafted, owner approval needed)
 
