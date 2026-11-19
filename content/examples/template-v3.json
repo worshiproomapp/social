@@ -1,0 +1,182 @@
+{
+ "month": "YYYY-MM",
+ "template": 3,
+ "note": "Shape reference for template 3 = template 2 + post ids, purposes, experiments, carousels, answer pages, pace. Not a real pack. Videos and images keep the template-2 fields (see template-v2.json).",
+ "experiments": [
+  {
+   "name": "tt-pace",
+   "hypothesis": "A 1.5 s hook and quicker reveals hold a bigger share of the video than the standard pace.",
+   "metric": "average watch % of length",
+   "arms": [
+    "standard",
+    "fast"
+   ],
+   "min_per_arm": 4
+  },
+  {
+   "name": "ig-feed-format",
+   "hypothesis": "Carousels earn more saves than single verse images.",
+   "metric": "saves per 100 reach",
+   "arms": [
+    "carousel",
+    "image"
+   ],
+   "min_per_arm": 4
+  }
+ ],
+ "videos": [
+  {
+   "id": "v-sample-sleep",
+   "kicker": "When you can’t sleep",
+   "hook": "Can’t sleep? Pray this tonight.",
+   "hook_em": "tonight.",
+   "leadin": "For a mind that won’t settle, a word to rest on:",
+   "pages": [
+    {
+     "chunks": [
+      "In peace I will both",
+      "lay myself down",
+      "and sleep,",
+      "for you alone, Yahweh,",
+      "make me live in safety."
+     ],
+     "open": true,
+     "close": true,
+     "ref": "Psalm 4:8"
+    },
+    {
+     "label": "A prayer for tonight",
+     "style": "prayer",
+     "chunks": [
+      "Lord, my thoughts are",
+      "running in circles.",
+      "I can’t solve any of this",
+      "tonight, and I don’t have to.",
+      "I’m setting each one down",
+      "in front of You.",
+      "Quiet my mind",
+      "and let me rest."
+     ]
+    }
+   ],
+   "go_deeper": "What to pray when you can’t sleep",
+   "music": "F",
+   "verify": [
+    [
+     "PSA",
+     4,
+     8,
+     8
+    ]
+   ],
+   "pace": "fast",
+   "link": "https://worshiproom.com/guides/what-to-pray-when-you-cant-sleep"
+  }
+ ],
+ "images": [],
+ "carousels": [
+  {
+   "id": "c-sample-anxious",
+   "kicker": "Bible verses about anxiety",
+   "go_deeper": "Bible verses about anxiety",
+   "bg": 14000,
+   "slides": [
+    {
+     "kind": "cover",
+     "headline": "Is it a sin to feel anxious?",
+     "headline_em": "anxious?",
+     "sub": "What Scripture actually says, in four short slides."
+    },
+    {
+     "kind": "text",
+     "n": 1,
+     "heading": "Feeling anxious isn’t a sin.",
+     "body": [
+      "The psalmists, Paul, and Jesus Himself in the garden of Gethsemane felt deep distress.",
+      "Scripture’s invitation is to bring that anxiety to God rather than carry it alone."
+     ]
+    },
+    {
+     "kind": "verse",
+     "n": 2,
+     "quote": "In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God.",
+     "ref": "Philippians 4:6",
+     "note": "Paul doesn’t say “stop feeling anxious.” He gives you something to do with it: turn each worry into a request.",
+     "verify": [
+      [
+       "PHP",
+       4,
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "kind": "verse",
+     "n": 3,
+     "quote": "casting all your worries on him, because he cares for you.",
+     "ref": "1 Peter 5:7",
+     "note": "“Casting” is a strong word. You don’t hand worries over gently; you throw them, because they’re too heavy to hold.",
+     "verify": [
+      [
+       "1PE",
+       5,
+       7,
+       7
+      ]
+     ]
+    },
+    {
+     "kind": "end",
+     "close": "Bring one worry to Him tonight."
+    }
+   ],
+   "link": "https://worshiproom.com/guides/bible-verses-about-anxiety",
+   "sizes": [
+    "ig",
+    "tt"
+   ]
+  }
+ ],
+ "_fields": {
+  "video.pace": "\"fast\" for the fast arm of tt-pace (1.5 s hook, quicker reveals); omit for standard.",
+  "video.pages[].style": "\"prayer\" (our own words, italic) or \"answer\" (a plain answer whose sentences come from the linked guide; set video.link).",
+  "carousel.slides[].kind": "cover {headline, headline_em, sub} · verse {n, quote, ref, verify, note?} · text {n, heading, body[], size?} · end {close?}. 3–10 slides; cover first, end last.",
+  "carousel.slides[].note / text": "context and answers must be sentences from the linked guide (content/guides-text/<slug>.txt); build.py checks every clause of 4+ words. Set \"voice\": \"prayer\" on a slide only for a prayer in our own words.",
+  "carousel.sizes": "[\"ig\"] 1080×1350, [\"tt\"] 1080×1920 (TikTok photo mode); default both.",
+  "post.id": "<YYYY-MM>-<tt|ig|pin>-<nn>, unique; becomes utm_content.",
+  "post.purpose": "discover | save | visit",
+  "post.experiment": "{name, arm} matching pack.experiments"
+ },
+ "posts": [
+  {
+   "id": "YYYY-MM-tt-01",
+   "channel": "tiktok",
+   "media": "v-sample-sleep",
+   "when": "YYYY-MM-02T21:00:00-06:00",
+   "when_label": "Day 2, 9:00 PM",
+   "link": "https://worshiproom.com/guides/what-to-pray-when-you-cant-sleep",
+   "purpose": "discover",
+   "experiment": {
+    "name": "tt-pace",
+    "arm": "fast"
+   },
+   "caption": "What to pray when you can’t sleep. ... from Worship Room: worshiproom.com/guides/what-to-pray-when-you-cant-sleep #prayer #cantsleep #bibleverse"
+  },
+  {
+   "id": "YYYY-MM-ig-01",
+   "channel": "instagram",
+   "media": "c-sample-anxious",
+   "when": "YYYY-MM-03T12:00:00-06:00",
+   "when_label": "Day 3, 12:00 PM",
+   "link": "https://worshiproom.com/guides/bible-verses-about-anxiety",
+   "purpose": "save",
+   "experiment": {
+    "name": "ig-feed-format",
+    "arm": "carousel"
+   },
+   "ig_type": "post",
+   "caption": "Is it a sin to feel anxious? ... from Worship Room: worshiproom.com/guides/bible-verses-about-anxiety #bibleverses #anxiety #faith"
+  }
+ ]
+}

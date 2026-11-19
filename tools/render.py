@@ -166,9 +166,13 @@ SPW = 0.34     # reveal pacing, seconds per word
 
 
 def timeline(spec):
-    """(id, t_in, t_out) events and the total length. Phases: hook → leaf (pages) → end card."""
-    ev = [('kicker', -10, None), ('hook', -10, 2.3), ('hookline', 0.15, 2.3)]
-    t = 2.5
+    """(id, t_in, t_out) events and the total length. Phases: hook → leaf (pages) → end card.
+    pace "fast" (an experiment arm): a 1.5 s hook and quicker reveals, for shorter videos."""
+    fast = spec.get('pace') == 'fast'
+    spw = 0.29 if fast else SPW
+    hk = 1.5 if fast else 2.3
+    ev = [('kicker', -10, None), ('hook', -10, hk), ('hookline', 0.1, hk)]
+    t = hk + 0.2
     ev.append(('leaf', t, None))
     t += 0.7
     for pi, p in enumerate(spec['pages']):
@@ -178,12 +182,12 @@ def timeline(spec):
             ev.append((f'p{pi}l', t, None)); t += 0.8
         for ci, c in enumerate(p['chunks']):
             ev.append((f'p{pi}c{ci}', t, None))
-            t += max(0.8, len(c.split()) * SPW)
+            t += max(0.7 if fast else 0.8, len(c.split()) * spw)
         if p.get('ref'):
             t += 0.25
             ev.append((f'p{pi}r', t, None)); t += 0.6
         words = sum(len(c.split()) for c in p['chunks'])
-        t += 1.6 + words * 0.04
+        t += (1.2 if fast else 1.6) + words * 0.04
         last = pi == len(spec['pages']) - 1
         for i, e in enumerate(ev):
             if e[2] is None and (e[0].startswith(f'p{pi}') or (pi == 0 and e[0] == 'lead' and not last) or (last and e[0] in ('lead', 'leaf'))):
@@ -193,13 +197,14 @@ def timeline(spec):
     t += 0.2
     ev.append(('end', t, None))
     ev.append(('endline', t + 0.6, None))
-    return ev, round(t + 3.6, 2)
+    return ev, round(t + (2.8 if fast else 3.6), 2)
 
 
 def video_html(spec, ev, total):
     pages = []
     for pi, p in enumerate(spec['pages']):
         prayer = p.get('style') == 'prayer'
+        answer = p.get('style') == 'answer'
         chunks = []
         for ci, c in enumerate(p['chunks']):
             txt = esc(c)
@@ -208,7 +213,8 @@ def video_html(spec, ev, total):
             chunks.append(f'<span class=ch id=p{pi}c{ci}>{txt}</span>')
         lab = f'<p class="leadin plabel" id=p{pi}l>{esc(p["label"])}</p>' if p.get('label') else ''
         ref = f'<p class=ref id=p{pi}r>{esc(p["ref"])}</p>' if p.get('ref') else ''
-        pages.append(f'<div class="page{" prayer" if prayer else ""}">{lab}<p class=verse>{"".join(chunks)}</p>{ref}</div>')
+        cls = ' prayer' if prayer else (' answer' if answer else '')
+        pages.append(f'<div class="page{cls}">{lab}<p class=verse>{"".join(chunks)}</p>{ref}</div>')
     css = BASE_CSS.replace('TEX', tex())
     return f"""<!doctype html><html><head><meta charset=utf-8><style>{fonts_css()}{css}
 :root{{--w:{W}px;--h:{H}px}}
@@ -228,6 +234,7 @@ def video_html(spec, ev, total):
 .plabel{{font-size:36px;margin-bottom:24px}}
 .verse{{font-size:62px;line-height:1.28}}
 .page.prayer .verse{{font-style:italic;font-size:52px;line-height:1.38;color:#2A1F3A}}
+.page.answer .verse{{font-size:50px;line-height:1.36}}
 .ch{{display:block;opacity:0}}
 .ref{{font-size:25px;margin-top:38px;opacity:0}}
 #end{{position:absolute;left:96px;right:96px;top:300px;height:1000px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0}}
@@ -300,3 +307,102 @@ def render_videos(page, specs, out):
 def launch(p):
     args = ['--allow-file-access-from-files']
     return p.chromium.launch(executable_path=CHROME, args=args) if CHROME else p.chromium.launch(args=args)
+
+
+# ───────────────────────────── carousels ─────────────────────────────
+# Instagram (1080×1350) and TikTok photo mode (1080×1920). Slides share one background so the swipe feels continuous.
+# Slide kinds: cover · verse (leaf + optional margin note) · text (leaf with a heading and body) · end.
+ROMAN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
+SIZES = {'ig': (1080, 1350), 'tt': (1080, 1920)}
+TT_BG = {14000: 4, 26000: 16, 38000: 30}
+
+
+def slide_html(spec, slide, n, total, size):
+    W, H = SIZES[size]
+    tall = size == 'tt'
+    bgkey = spec.get('bg', 26000)
+    bg = _b64(A('bg', f'galaxy-tt-{TT_BG.get(bgkey, 16)}.jpg' if tall else f'galaxy-ig-{bgkey}.jpg'), 'image/jpeg')
+    css = BASE_CSS.replace('TEX', tex())
+    top = 250 if tall else 92          # TikTok overlays its own UI at the top and bottom of photo posts
+    bottom = 430 if tall else 84
+    kind = slide['kind']
+    num = slide.get('n')
+    numeral = f'<span class=numeral>{ROMAN[num - 1]}.</span>' if num else ''
+    body = ''
+    if kind == 'cover':
+        body = f"""<div class=cover><span class="lbl {spec.get('label_color','lav')}">{esc(spec['kicker'])}</span>
+          <h1 class=display>{em_html(slide['headline'], slide.get('headline_em'))}</h1>
+          {f'<p class=sub>{esc(slide["sub"])}</p>' if slide.get('sub') else ''}
+          <p class=swipe>Swipe <span>→</span></p></div>"""
+    elif kind in ('verse', 'text'):
+        if kind == 'verse':
+            inner = f"""<p class=verse><span class=q>“</span>{esc(slide['quote'])}<span class=q>”</span></p><p class=ref>{esc(slide['ref'])}</p>"""
+        else:
+            paras = ''.join(f'<p class=tbody>{esc(x)}</p>' for x in slide['body'])
+            inner = f"""<h2 class=thead>{esc(slide['heading'])}</h2>{paras}"""
+        note = f"""<div class=note>{svg(STROKE_LEAF, 'ink--night nm')}<p>{esc(slide['note'])}</p></div>""" if slide.get('note') else ''
+        lab = f'<span class="lbl {spec.get("label_color","lav")} slbl">{esc(slide["label"])}</span>' if slide.get('label') else ''
+        body = f"""<div class=mid>{lab}<div class=leafwrap><div class=leaf-back style="clip-path:{DECKLE_BACK}"></div>
+          <div class=leaf style="clip-path:{DECKLE_LEAF}">{numeral}{svg(STROKE_LEAF, 'ink--paper lm')}{inner}</div></div>{note}</div>"""
+    else:  # end
+        body = f"""<div class=endc><span class=wordmark>Worship Room</span>
+          {f'<p class=close>{esc(slide["close"])}</p>' if slide.get('close') else ''}
+          <p class=deeper>Go deeper: <b>{esc(spec['go_deeper'])}{svg(STROKE_LINK,'ink--night')}</b></p>
+          <p class=site>worshiproom.com</p></div>"""
+    vs = slide.get('size', 52 if tall else 46)
+    return f"""<!doctype html><html><head><meta charset=utf-8><style>{fonts_css()}{css}
+:root{{--w:{W}px;--h:{H}px}}
+body{{background:#08051a url({bg}) center/cover no-repeat}}
+.shade{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,5,26,.5),rgba(8,5,26,.12) 35%,rgba(8,5,26,.2) 70%,rgba(8,5,26,.72))}}
+.grain{{position:absolute;inset:0;background:url({_b64(A('textures','grain-dark.webp'),'image/webp')});opacity:.42}}
+.wrap{{position:absolute;left:84px;right:84px;top:{top}px;bottom:{bottom}px;display:flex;flex-direction:column}}
+.cover{{flex:1;display:flex;flex-direction:column;justify-content:center}}
+.cover .lbl{{font-size:21px;margin-bottom:26px}}
+.cover .display{{font-size:{100 if tall else 92}px;line-height:1.03}}
+.sub{{font-family:WRLora;font-style:italic;font-size:{36 if tall else 33}px;line-height:1.4;color:rgba(242,237,248,.84);margin-top:34px;max-width:820px;text-wrap:balance}}
+.swipe{{margin-top:46px;font-family:WRInter;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-size:18px;color:#DDB872}}
+.swipe span{{letter-spacing:0}}
+#emw{{position:relative}}
+#emw svg{{position:absolute;left:-4%;bottom:-.2em;width:108%;height:.42em}}
+.mid{{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center}}
+.slbl{{align-self:flex-start;font-size:19px;margin-bottom:30px}}
+.leafwrap{{width:{W-2*84-30}px;transform:rotate(-1.4deg)}}
+.leaf{{padding:62px 62px 58px;min-height:{560 if not tall else 760}px;display:flex;flex-direction:column;justify-content:center}}
+.numeral{{position:absolute;top:30px;right:44px;font-family:WRLora;font-style:italic;font-size:34px;color:#63400D}}
+.leaf svg.lm{{width:54px;height:14px;display:block;margin-bottom:24px}}
+.verse{{font-size:{vs}px;line-height:1.36}}
+.ref{{font-size:20px;margin-top:30px}}
+.thead{{font-family:WRLora;font-weight:500;font-size:{58 if tall else 52}px;line-height:1.15;color:#2A1F3A;margin-bottom:22px;text-wrap:balance}}
+.tbody{{font-family:WRLora;font-size:{slide.get('size', 40 if tall else 36)}px;line-height:1.46;color:#2A1F3A;margin-top:12px}}
+.note{{align-self:stretch;display:flex;gap:18px;align-items:flex-start;margin-top:44px;padding:0 10px}}
+.note svg.nm{{flex:none;width:46px;height:14px;margin-top:16px}}
+.note p{{font-family:WRLora;font-style:italic;font-size:{36 if tall else 32}px;line-height:1.45;color:rgba(242,237,248,.86)}}
+.endc{{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
+.endc .wordmark{{font-size:{140 if tall else 124}px;margin-bottom:34px}}
+.close{{font-family:WRLora;font-style:italic;font-size:36px;line-height:1.4;color:rgba(242,237,248,.88);margin-bottom:34px;max-width:780px;text-wrap:balance}}
+.endc .deeper{{font-size:32px;line-height:1.5}}
+.endc .site{{margin-top:26px;font-family:WRInter;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-size:19px;color:#BBA9F0}}
+.idx{{position:absolute;left:84px;right:84px;bottom:{bottom-56}px;display:flex;justify-content:space-between;font-family:WRInter;font-weight:600;letter-spacing:.2em;font-size:15px;color:rgba(187,169,240,.75)}}
+</style></head><body><div class=shade></div><div class=grain></div>
+<div class=wrap>{body}</div>
+<div class=idx><span>WORSHIP ROOM</span><span>{n:02d} / {total:02d}</span></div>
+<script>
+const e=document.getElementById('emw');
+if(e){{e.insertAdjacentHTML('beforeend',`{svg(STROKE_UNDER,'ink--night')}`)}}
+</script></body></html>"""
+
+
+def render_carousels(page, specs, out):
+    """Writes <id>-<size>-NN.png for each slide and size in spec['sizes'] (default ig + tt)."""
+    for spec in specs:
+        slides = spec['slides']
+        for size in spec.get('sizes', ['ig', 'tt']):
+            W, H = SIZES[size]
+            page.set_viewport_size({'width': W, 'height': H})
+            for i, sl in enumerate(slides, 1):
+                hp = os.path.join(tempfile.gettempdir(), f'_{spec["id"]}-{size}-{i}.html')
+                open(hp, 'w').write(slide_html(spec, sl, i, len(slides), size))
+                page.goto('file://' + hp)
+                page.evaluate('document.fonts.ready'); page.wait_for_timeout(200)
+                page.screenshot(path=os.path.join(out, f'{spec["id"]}-{size}-{i:02d}.png'))
+        print('carousel', spec['id'], len(slides), 'slides')

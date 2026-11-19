@@ -26,14 +26,30 @@ and Buffer fetches it from there. Use American spelling in everything.
 
 | Channel | Posts | Format | Default time (America/Chicago) |
 |---|---|---|---|
-| TikTok | 8 | vertical video, 1080×1920, 20–35 s | 2 per week, 7:30 PM (sleep/night topics 9:00 PM) |
-| Instagram | 8 | 4 Reels (reuse 4 of the TikTok videos, 2+ days after their TikTok date) + 4 feed images 1080×1350 | 2 per week, 12:00 PM |
-| Pinterest | 8 | pins 1000×1500 | 2 per week, 8:00 PM |
+| TikTok | 8 | 6 vertical videos 1080×1920, 15–30 s + 2 photo-mode carousels (1080×1920) | 2 per week, 7:30 PM (sleep/night topics 9:00 PM) |
+| Instagram | 8 | 4 Reels (reuse 4 of the TikTok videos, 2+ days after their TikTok date) + 4 feed posts: carousels (1080×1350) and single images 1080×1350, per the running `ig-feed-format` experiment | 2 per week, 12:00 PM |
+| Pinterest | 8 | pins 1000×1500 (single image only) | 2 per week, 8:00 PM |
 
-Total new assets: 8 videos, 4 Instagram images, 8 pins. Spread posts across the whole month, days 1–28.
+Total new assets: 6 videos, carousels (each rendered for Instagram and TikTok), feed images, 8 pins. Spread posts across the whole month, days 1–28.
+Review window: the first post of a pack is never earlier than 5 days after the pack is scheduled (the owner's veto window; he can reply "pull #N").
 Before scheduling, count each channel's already-queued posts with `list_posts` (status scheduled); never exceed 10 per channel.
 
-## Writing the pack (`content/packs/YYYY-MM.json`; copy the shape of the latest pack)
+## Strategy and measurement (read before writing a pack)
+
+- `content/strategy.md`: purposes, funnel, UTM scheme, platform playbook, content pillars, running experiments, decision rules.
+- `content/insights.md`: dated observations and hypotheses with denominators. Only `tools/analyze.py` FINDINGS change strategy.
+- `content/guides-text/<slug>.txt`: the text of each guide. Context lines, answers and carousel text must come from here.
+- `content/schedules/<month>.json` (written by the build, committed): post ids, purposes, experiments and media URLs, used by `tools/analyze.py`.
+
+## Writing the pack (`content/packs/YYYY-MM.json`; copy the shape of `content/examples/template-v3.json`)
+
+- Template 3 (set `"template": 3`): every post has a unique `id` (`<YYYY-MM>-<tt|ig|pin>-<nn>`, it becomes `utm_content`), a `purpose`
+  (`discover`, `save` or `visit`) and, when it is part of a test, an `experiment` `{name, arm}` declared in the pack's `experiments`
+  (hypothesis, metric, arms, min_per_arm). Carry running experiments from `content/strategy.md`; one variable at a time.
+- Carousels (`carousels`): cover → 3–6 content slides (verse with a context note, or a plain-answer text slide) → end card. Every
+  sentence of a note or answer must come from the linked guide's text (the check enforces this). Pinterest never gets a carousel.
+- Videos may add an `"answer"` page (a plain answer from the guide; set the video's `link`) and `"pace": "fast"` for the fast arm of `tt-pace`.
+- Pinterest pin URLs use the tracked link the build writes (`tracked_link`). TikTok and Instagram captions keep the clean path.
 
 - Every post links to one guide from `content/guides.json` (the check enforces this). Rotate topics; don't repeat a passage used in the previous 3 packs.
 - Topic mix each month: anxiety/fear/peace, grief/loneliness/healing (gentle), hope/strength/encouragement, God's love, prayer how-tos (how to pray, morning prayer, the Lord's Prayer, prayer journal, can't sleep), Bible reading (in a year, where to start, printable plans), Psalm 23/91, Jeremiah 29:11. Fit the season (Advent and Christmas in December, new-year reading plans in January, Easter in spring), but link to an existing guide.
@@ -46,17 +62,17 @@ Before scheduling, count each channel's already-queued posts with `list_posts` (
 ## Monthly run (what the scheduled task does)
 
 1. Attach and clone this repo (push access), `pip install --break-system-packages --no-deps tinysoundfont`, and confirm `ffmpeg`, Playwright, and Chrome/Chromium are available.
-2. Buffer: `get_account` → organization; `list_channels`; `get_channel` on Pinterest for board IDs; `list_posts` (scheduled) for queue counts; `list_posts` with `includeMetrics` for last month's posts. Note what did best (watch time, reach, saves) and lean the new pack that way.
+2. Buffer: `get_account` → organization; `list_channels`; `get_channel` on Pinterest for board IDs; `list_posts` (scheduled) for queue counts; `list_posts` with `includeMetrics` (status sent) for the last ~8 weeks, saved to `metrics/<date>.json`, then `python3 tools/analyze.py metrics/<date>.json --out content/reports/<date>.md`. Apply FINDINGS; treat everything else as a hypothesis to test, not a rule.
 3. Write `content/packs/<month>.json`, then `python3 tools/build.py content/packs/<month>.json --check` until it passes.
-4. `python3 tools/build.py content/packs/<month>.json` renders `media/<month>/` and `build/<month>/` (`schedule.json` plus a `preview/` page).
+4. `python3 tools/build.py content/packs/<month>.json` renders `media/<month>/`, `previews/<month>/index.html`, `content/schedules/<month>.json` and `build/<month>/schedule.json`.
 5. Look at the output yourself before anyone else does: Read every PNG, and pull 3–4 frames from every video with ffmpeg. Fix wrapping, crowding, or anything off-brand, then rebuild.
-6. Commit `media/<month>/` and the pack JSON, then push to main. Pages updates within a minute or two.
-7. Publish `build/<month>/preview/` as an artifact titled "Worship Room social: <Month YYYY> pack" (publish_files).
+6. Commit `media/<month>/`, `previews/<month>/`, `content/schedules/<month>.json`, the pack JSON and any report, then push to main. Pages updates within a minute or two.
+7. The preview is `https://worshiproomapp.github.io/social/previews/<month>/` (noindex, and robots.txt disallows the site). If an Artifact tool is available, also publish `previews/<month>/` as an artifact titled "Worship Room social: <Month YYYY> pack"; it is optional.
 8. Schedule every post from `build/<month>/schedule.json` with Buffer `create_post` (mode customScheduled, schedulingType automatic):
-   - TikTok: text = caption; video asset with `thumbnailOffset` = `thumbnail_ms`.
-   - Instagram Reel: `metadata.instagram = {type: "reel", shouldShareToFeed: true}`. Feed image: `{type: "post", shouldShareToFeed: true}` with image `altText`.
-   - Pinterest: `metadata.pinterest = {boardServiceId, title, url: link}`; text = caption; image `altText`.
+   - TikTok: text = caption; video asset with `thumbnailOffset` = `thumbnail_ms`. Photo carousel: the `images` list in order, each with its `alt` as `altText`.
+   - Instagram Reel: `metadata.instagram = {type: "reel", shouldShareToFeed: true}`. Feed image: `{type: "post", shouldShareToFeed: true}` with image `altText`. Carousel: `{type: "post"}` with every slide image in order, each with its `altText`.
+   - Pinterest: `metadata.pinterest = {boardServiceId, title, url: tracked_link}`; text = caption; image `altText`.
    - If Buffer rejects a media URL right after the push, wait two minutes (Pages deploy) and retry once.
-9. Send the owner a push notification and a short summary: the preview link, the post count per channel, the first post date, and how to pull a post ("reply 'pull #N'").
+9. Send the owner a push notification and a short summary: the preview link, the post count per channel, the first post date (5+ days out), the experiments running, and how to pull a post ("reply 'pull #N'").
 
 Old months' media must stay in `media/` until every post that uses it has published.

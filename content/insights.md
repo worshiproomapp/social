@@ -1,12 +1,20 @@
 # Performance insights
 
-Updated by the twice-monthly check. The monthly pack task applies these rules.
+Observations and hypotheses, each with its denominator. Nothing here is a FINDING (see content/strategy.md for the rules);
+the monthly pack treats these as things to test, not rules.
 
-## 2026-11-19 (test batch, 6 posts, Nov 13–18)
-- Setup verified: TikTok auto-publish, Instagram Reel + feed image with alt text, and Pinterest board/title/link/alt all work via Buffer from GitHub Pages URLs.
-- TikTok: 139–142 views per video, but average watch time was only 2.2–3.0 s on 30–37 s videos. Viewers left before the verse appeared.
-  - Rule: every video opens with a big hook line on frame 0 (now built into tools/render.py). Aim for 20–28 s total.
-- The prayer-for-sleep video (Psalm 4:8 + prayer, 9 PM) beat the anxiety verse video: 6 likes and 1 share vs 1 like. Personal, "for tonight" prayers look promising; test more of them.
-- Instagram Reel (Psalm 23) reached 100 accounts with a 7% engagement rate (6 likes, 1 comment). The feed image (Isaiah 41:10) had 0 reach after 2 days. Favor Reels over static images until images show reach.
-- Pinterest pins: 0 impressions after 1–3 days, which is normal for new pins. Judge pins after 30+ days.
-- TikTok strips caption line breaks. Keep TikTok captions as short paragraphs that read fine run together.
+## 2026-11-19 audit (test batch: 6 Buffer posts Nov 13–18, plus 20 pins scheduled from Nov 10)
+- Setup verified: TikTok auto-publish, Instagram Reel + feed image with alt text, and Pinterest board/title/link/alt all work
+  through Buffer from GitHub Pages URLs.
+- TikTok (2 videos): reach 132 and 130; average watch 2.2 s of 30.5 s and 3.0 s of 37.4 s (about 7–8% of the length).
+  Hypothesis: viewers leave before the verse appears. The hook on frame 0 shipped in template 2; the December `tt-pace`
+  experiment tests a faster version.
+- TikTok engagement: 1 like / 132 reach vs 6 likes + 1 share / 130 reach. The second was the "for tonight" sleep prayer.
+  Hypothesis: personal, moment-specific prayers engage more than a verse alone. One pair of posts; test more.
+- Instagram Reel (Psalm 23): 100 reach, 6 likes, 1 comment, 0 saves, 0 shares; average watch 3.4 s of 29.3 s.
+- Instagram feed image (Isaiah 41:10): 0 reach after 2 days on a 0-follower account. Hypothesis: single images get no
+  distribution without followers. One post; the `ig-feed-format` experiment tests carousels against images.
+- Pinterest (Buffer pins): 0 impressions after 1–3 days. Normal; judge pins at 30+ days.
+- Pinterest (all pins since Nov 10): 131 impressions, 2 closeups, 0 saves across 20 pins. Best single pin: the printable
+  reading plan (26 impressions). Too early to judge.
+- TikTok strips caption line breaks. Keep TikTok captions as short paragraphs that read fine run together. (Observed, not a metric.)
