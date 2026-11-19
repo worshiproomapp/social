@@ -203,7 +203,7 @@ def schedule_and_preview(pack, month):
         item['id'] = pid
         item['tracked_link'] = utm(p['link'], p['channel'], month, pid, item['guide'])
         if p['media'] in vids:
-            item.update(kind='video', url=base + p['media'] + '.mp4', thumbnail_ms=vids[p['media']].get('thumbnail_ms', 2000))
+            item.update(kind='video', url=base + p['media'] + '.mp4', thumbnail_ms=vids[p['media']].get('thumbnail_ms', 2000), seconds=vids[p['media']].get('seconds'))
         elif p['media'] in cars:
             c = cars[p['media']]; size = 'tt' if p['channel'] == 'tiktok' else 'ig'
             item.update(kind='carousel', images=[{'url': f"{base}{c['id']}-{size}-{n:02d}.png", 'alt': carousel_alt(c, sl, n)}
