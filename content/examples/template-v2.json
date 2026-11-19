@@ -1,0 +1,127 @@
+{
+ "month": "YYYY-MM",
+ "template": 2,
+ "note": "Shape reference for template 2 (the homepage look). Not a real pack.",
+ "videos": [
+  {
+   "id": "v-sample-sleep",
+   "kicker": "When you can’t sleep",
+   "hook": "Can’t sleep? Pray this tonight.",
+   "hook_em": "tonight.",
+   "leadin": "For a mind that won’t settle, a word to rest on:",
+   "pages": [
+    {
+     "chunks": [
+      "In peace I will both",
+      "lay myself down",
+      "and sleep,",
+      "for you alone, Yahweh,",
+      "make me live in safety."
+     ],
+     "open": true,
+     "close": true,
+     "ref": "Psalm 4:8"
+    },
+    {
+     "label": "A prayer for tonight",
+     "style": "prayer",
+     "chunks": [
+      "Lord, my thoughts are",
+      "running in circles.",
+      "I can’t solve any of this",
+      "tonight, and I don’t have to.",
+      "I’m setting each one down",
+      "in front of You.",
+      "Quiet my mind",
+      "and let me rest."
+     ]
+    }
+   ],
+   "go_deeper": "What to pray when you can’t sleep",
+   "music": "F",
+   "verify": [
+    [
+     "PSA",
+     4,
+     8,
+     8
+    ]
+   ]
+  }
+ ],
+ "images": [
+  {
+   "id": "i-sample-fear",
+   "w": 1080,
+   "h": 1350,
+   "kicker": "Bible verses about fear",
+   "headline": "When you’re afraid, read this slowly.",
+   "headline_em": "slowly.",
+   "leadin": "Five promises in one verse:",
+   "quote": "Don’t you be afraid, for I am with you. Don’t be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.",
+   "ref": "Isaiah 41:10",
+   "go_deeper": "Bible verses about fear",
+   "bg": 14000,
+   "verify": [
+    [
+     "ISA",
+     41,
+     10,
+     10
+    ]
+   ]
+  },
+  {
+   "id": "i-sample-sleep-pin",
+   "w": 1000,
+   "h": 1500,
+   "kicker": "Pray · Sleepless nights",
+   "headline": "What to pray when you can’t sleep.",
+   "headline_em": "can’t sleep.",
+   "leadin": "A verse to rest on tonight:",
+   "quote": "In peace I will both lay myself down and sleep, for you alone, Yahweh, make me live in safety.",
+   "ref": "Psalm 4:8",
+   "go_deeper": "Short prayers for sleepless nights",
+   "bg": 38000,
+   "verify": [
+    [
+     "PSA",
+     4,
+     8,
+     8
+    ]
+   ]
+  }
+ ],
+ "posts": [
+  {
+   "channel": "tiktok",
+   "media": "v-sample-sleep",
+   "when": "2026-12-01T21:00:00-06:00",
+   "when_label": "Tue Dec 1, 9:00 PM CT",
+   "link": "https://worshiproom.com/guides/what-to-pray-when-you-cant-sleep",
+   "caption": "…"
+  },
+  {
+   "channel": "instagram",
+   "media": "i-sample-fear",
+   "ig_type": "post",
+   "when": "…",
+   "when_label": "…",
+   "link": "https://worshiproom.com/guides/bible-verses-about-fear",
+   "caption": "…",
+   "alt": "…"
+  },
+  {
+   "channel": "pinterest",
+   "media": "i-sample-sleep-pin",
+   "board": "Prayers",
+   "title": "What to Pray When You Can’t Sleep (Psalm 4:8)",
+   "when": "…",
+   "when_label": "…",
+   "link": "https://worshiproom.com/guides/what-to-pray-when-you-cant-sleep",
+   "caption": "…",
+   "alt": "…"
+  }
+ ]
+}

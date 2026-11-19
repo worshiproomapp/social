@@ -43,9 +43,17 @@ def check(pack):
         s = src(v['verify']); srcs[v['id']] = s
         if norm(text) != norm(s): errs.append(f"{v['id']}: verse text != WEB\n   have: {text}\n   WEB:  {s}")
         if v.get('music') not in ('D', 'F', 'G'): errs.append(f"{v['id']}: music must be D, F or G")
+        if pack.get('template', 1) >= 2:
+            for k in ('hook', 'kicker', 'go_deeper'):
+                if not v.get(k): errs.append(f"{v['id']}: missing {k}")
+            if v.get('hook_em') and v['hook_em'] not in v.get('hook', ''): errs.append(f"{v['id']}: hook_em not in hook")
     for i in pack['images']:
         s = src(i['verify']); srcs[i['id']] = s
         if norm(i['quote']) != norm(s): errs.append(f"{i['id']}: quote != WEB\n   have: {i['quote']}\n   WEB:  {s}")
+        if pack.get('template', 1) >= 2:
+            for k in ('kicker', 'headline', 'go_deeper'):
+                if not i.get(k): errs.append(f"{i['id']}: missing {k}")
+            if i.get('headline_em') and i['headline_em'] not in i.get('headline', ''): errs.append(f"{i['id']}: headline_em not in headline")
     allsrc = ' '.join(srcs.values())
     files = {v['id'] for v in pack['videos']} | {i['id'] for i in pack['images']}
     for n, p in enumerate(pack['posts']):
@@ -67,9 +75,13 @@ def check(pack):
             for rx, why, cs in BANNED:
                 if re.search(rx, t, 0 if cs else re.I): errs.append(f'{tag}: {field} breaks rule: {why}')
     for v in pack['videos']:
-        blob = ' '.join([v.get('hook', ''), v['kicker'], v['end_line']] + [c for p in v['pages'] for c in p['chunks']])
+        blob = ' '.join([v.get('hook', ''), v['kicker'], v.get('end_line', ''), v.get('go_deeper', ''), v.get('leadin', '')] + [c for p in v['pages'] for c in p['chunks']])
         for rx, why, cs in BANNED:
             if re.search(rx, blob, 0 if cs else re.I): errs.append(f"{v['id']}: on-screen text breaks rule: {why}")
+    for i in pack['images']:
+        blob = ' '.join([i.get('kicker', ''), i.get('headline', ''), i.get('leadin', ''), i.get('go_deeper', ''), i.get('footer', '')])
+        for rx, why, cs in BANNED:
+            if re.search(rx, blob, 0 if cs else re.I): errs.append(f"{i['id']}: on-screen text breaks rule: {why}")
     return errs
 
 

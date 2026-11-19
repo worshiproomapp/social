@@ -6,7 +6,7 @@ Media and tooling for Worship Room's scheduled social posts. Media is served wit
 - `content/packs/YYYY-MM.json`: the month's verses, captions, alt text, and schedule
 - `content/guides.json`: guides that posts link to
 - `tools/`: `build.py` checks a pack (Scripture wording, links, content rules) and renders it; `web.py` looks up passages
-- `assets/`: fonts (SIL Open Font License), World English Bible text (public domain), GeneralUser GS SoundFont (see its license)
+- `assets/`: fonts (SIL Open Font License), World English Bible text (public domain), GeneralUser GS SoundFont (see its license), galaxy backgrounds and paper textures from the Worship Room site
 
 Music in the videos is original, composed and rendered by `tools/music.py`.
 
