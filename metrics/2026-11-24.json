@@ -1,0 +1,2210 @@
+[
+ {
+  "id": "6af4f8908a1a2f52b50c43ee",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "Reading the whole Bible in a year takes about 3¼ chapters a day, roughly 10 to 15 minutes. Worship Room’s guide covers how to choose a cover-to-cover, chronological or blended plan, tips that help people finish, and what to do when you fall behind, plus a free printable 365-day reading plan. “Your word is a lamp to my feet, and a light for my path.” Psalm 119:105",
+  "dueAt": "2026-11-19T02:00:00.000Z",
+  "sentAt": "2026-11-19T02:02:35.585Z",
+  "createdAt": "2026-11-11T23:21:52.479Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/png",
+    "source": "https://worshiproomapp.github.io/social/media/2026-11/i3-psalm-119-105-bible-in-a-year-pin.png",
+    "thumbnail": "https://worshiproomapp.github.io/social/media/2026-11/i3-psalm-119-105-bible-in-a-year-pin.png",
+    "image": {
+     "width": 1000,
+     "height": 1500,
+     "altText": "Verse pin on a deep purple, starry background. Heading: How to read the Bible in a year. Quote: “Your word is a lamp to my feet, and a light for my path.” Psalm 119:105. Footer: About 3 chapters a day + a free printable plan. Worship Room, worshiproom.com.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 2,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f88fbc9f3773a1a8977d",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "Short prayers and Bible verses for nights you can’t sleep. Psalm 4:8: “In peace I will both lay myself down and sleep, for you alone, Yahweh, make me live in safety.” Worship Room’s guide has prayers for a racing mind, worry about tomorrow, grief and exhaustion, a simple breath prayer, and gentle ways to quiet your mind before bed.",
+  "dueAt": "2026-11-17T02:00:00.000Z",
+  "sentAt": "2026-11-17T02:01:40.305Z",
+  "createdAt": "2026-11-11T23:21:51.785Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/png",
+    "source": "https://worshiproomapp.github.io/social/media/2026-11/i2-psalm-4-8-cant-sleep-pin.png",
+    "thumbnail": "https://worshiproomapp.github.io/social/media/2026-11/i2-psalm-4-8-cant-sleep-pin.png",
+    "image": {
+     "width": 1000,
+     "height": 1500,
+     "altText": "Verse pin on a deep purple, starry background. Heading: What to pray when you can’t sleep. Quote: “In peace I will both lay myself down and sleep, for you alone, Yahweh, make me live in safety.” Psalm 4:8. Footer: Short prayers + verses for sleepless nights. Worship Room, worshiproom.com.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 2,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f88f77f44b6536018e2b",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "Bible verses about fear: Isaiah 41:10 holds five promises in one verse. I am with you. I am your God. I will strengthen you. I will help you. I will uphold you.\n\n“Don’t you be afraid, for I am with you. Don’t be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.” Isaiah 41:10\n\nSave this for a day you need it. More verses about fear and courage, plus a prayer for when you’re afraid, from Worship Room: worshiproom.com/guides/bible-verses-about-fear\n\n#bibleverses #isaiah4110 #faithoverfear",
+  "dueAt": "2026-11-17T18:00:00.000Z",
+  "sentAt": "2026-11-17T18:07:48.696Z",
+  "createdAt": "2026-11-11T23:21:51.242Z",
+  "channelId": "6af4f0a862b70b94b0fd4a04",
+  "channelService": "instagram",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/png",
+    "source": "https://worshiproomapp.github.io/social/media/2026-11/i1-isaiah-41-10-fear.png",
+    "thumbnail": "https://worshiproomapp.github.io/social/media/2026-11/i1-isaiah-41-10-fear.png",
+    "image": {
+     "width": 1080,
+     "height": 1350,
+     "altText": "Verse card on a deep purple, starry background. Heading: Bible verses about fear. Quote: “Don’t you be afraid, for I am with you. Don’t be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.” Isaiah 41:10. Footer: Verses + a prayer for when you’re afraid. Worship Room, worshiproom.com.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on Instagram. This shows how many people reacted to your post.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Views",
+    "description": "How many times your post was viewed. Helps you understand how much attention your content gets.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "follows",
+    "name": "Follows",
+    "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:50:53.592Z"
+ },
+ {
+  "id": "6af4f88ecb4c7286fdfdba83",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "What to pray when you can’t sleep: one verse and one short prayer for tonight. “In peace I will both lay myself down and sleep, for you alone, Yahweh, make me live in safety.” Psalm 4:8 A prayer for tonight: Lord, my thoughts are running in circles. I can’t solve any of this tonight, and I don’t have to. I’m setting each one down in front of You. Quiet my mind and let me rest. More short prayers for sleepless nights, from Worship Room: worshiproom.com/guides/what-to-pray-when-you-cant-sleep #prayer #cantsleep #bibleverse #christiantiktok",
+  "dueAt": "2026-11-16T03:00:00.000Z",
+  "sentAt": "2026-11-16T03:02:02.486Z",
+  "createdAt": "2026-11-11T23:21:50.130Z",
+  "channelId": "6af4f07762b70b94b0fd4896",
+  "channelService": "tiktok",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "VideoAsset",
+    "id": null,
+    "type": "video",
+    "mimeType": "video/mp4",
+    "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af4efb33c5faa5a9f4e0276/6af4f07762b70b94b0fd4896/6af4f88ecb4c7286fdfdba83_video.mp4",
+    "thumbnail": "https://images.buffer.com/thumbnail/_9qntDo0_piH1EJiUz4wcnZCziH5YFZjTNoDDJPb7i0?url=https%3A%2F%2Fworshiproomapp.github.io%2Fsocial%2Fmedia%2F2026-11%2Fv2-psalm-4-8-cant-sleep.mp4&offset=12100",
+    "video": {
+     "durationMs": 37433,
+     "containerFormat": null,
+     "videoCodec": "h264",
+     "frameRate": null,
+     "title": "Untitled Video",
+     "thumbnailOffset": 12100
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+    "value": 6,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 4.93,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Video Views",
+    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+    "value": 142,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 132,
+    "unit": "count"
+   },
+   {
+    "type": "totalTimeWatched",
+    "name": "Watch Time (min)",
+    "description": "The total time people spent watching your video, added up over every view.",
+    "value": 7.3,
+    "unit": "count"
+   },
+   {
+    "type": "averageTimeWatched",
+    "name": "Avg. Watch Time (sec)",
+    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+    "value": 3.02,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T10:00:49.429Z"
+ },
+ {
+  "id": "6af4f88e304f8985c46feea5",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "Psalm 23 is one of the most loved passages in the Bible. Here are its first three verses:\n\n“Yahweh is my shepherd; I shall lack nothing. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He guides me in the paths of righteousness for his name’s sake.” Psalm 23:1–3\n\nWhat does Psalm 23 mean? Worship Room walks through it verse by verse, from the still waters to the valley of the shadow of death: worshiproom.com/guides/psalm-23-meaning\n\n#psalm23 #bibleverse #scripture",
+  "dueAt": "2026-11-14T18:00:00.000Z",
+  "sentAt": "2026-11-14T18:04:18.123Z",
+  "createdAt": "2026-11-11T23:21:50.698Z",
+  "channelId": "6af4f0a862b70b94b0fd4a04",
+  "channelService": "instagram",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "VideoAsset",
+    "id": null,
+    "type": "video",
+    "mimeType": "video/mp4",
+    "source": "https://worshiproomapp.github.io/social/media/2026-11/v3-psalm-23-1-3.mp4",
+    "thumbnail": "https://images.buffer.com/thumbnail/aDGtltZT8HUIBx63hhDYWqFUN8COFI41h7iZj__nedY?url=https%3A%2F%2Fworshiproomapp.github.io%2Fsocial%2Fmedia%2F2026-11%2Fv3-psalm-23-1-3.mp4&offset=12200",
+    "video": {
+     "durationMs": 29333,
+     "containerFormat": null,
+     "videoCodec": "h264",
+     "frameRate": null,
+     "title": "Untitled Video",
+     "thumbnailOffset": 12200
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on Instagram. This shows how many people reacted to your post.",
+    "value": 6,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 7,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Views",
+    "description": "How many times your post was viewed. Helps you understand how much attention your content gets.",
+    "value": 111,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "totalTimeWatched",
+    "name": "Watch Time (min)",
+    "description": "Total time watched in minutes",
+    "value": 6.3,
+    "unit": "count"
+   },
+   {
+    "type": "averageTimeWatched",
+    "name": "Avg. Watch Time (sec)",
+    "description": "How long people watched your Reel for on average. Shows how well it holds attention.",
+    "value": 3.67,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 100,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:50:53.592Z"
+ },
+ {
+  "id": "6af4f88d77f44b6536018dae",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "duplicatePost",
+   "updateShopGridLink"
+  ],
+  "via": "buffer",
+  "text": "What does the Bible say about anxiety? Philippians 4:6–7: “In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your thoughts in Christ Jesus.” Paul doesn’t say “stop feeling anxious.” He gives you something to do with it: turn each worry into a prayer, and say thank you while you wait. More Bible verses for anxiety, plus a short prayer, from Worship Room: worshiproom.com/guides/bible-verses-about-anxiety #bibleverses #anxiety #philippians4 #christiantiktok",
+  "dueAt": "2026-11-14T01:30:00.000Z",
+  "sentAt": "2026-11-14T01:31:15.775Z",
+  "createdAt": "2026-11-11T23:21:49.514Z",
+  "channelId": "6af4f07762b70b94b0fd4896",
+  "channelService": "tiktok",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "VideoAsset",
+    "id": null,
+    "type": "video",
+    "mimeType": "video/mp4",
+    "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af4efb33c5faa5a9f4e0276/6af4f07762b70b94b0fd4896/6af4f88d77f44b6536018dae_video.mp4",
+    "thumbnail": "https://images.buffer.com/thumbnail/dct4RtN9NpKQTjoNQIlRgqnDeXykH75CNtGkASZ6A0U?url=https%3A%2F%2Fworshiproomapp.github.io%2Fsocial%2Fmedia%2F2026-11%2Fv1-philippians-4-6-7-anxiety.mp4&offset=11900",
+    "video": {
+     "durationMs": 30533,
+     "containerFormat": null,
+     "videoCodec": "h264",
+     "frameRate": null,
+     "title": "Untitled Video",
+     "thumbnailOffset": 11900
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0.72,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Video Views",
+    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+    "value": 139,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 132,
+    "unit": "count"
+   },
+   {
+    "type": "totalTimeWatched",
+    "name": "Watch Time (min)",
+    "description": "The total time people spent watching your video, added up over every view.",
+    "value": 5.08,
+    "unit": "count"
+   },
+   {
+    "type": "averageTimeWatched",
+    "name": "Avg. Watch Time (sec)",
+    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+    "value": 2.06,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T10:00:49.429Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f913",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "A simple morning prayer to start your day with God, short prayers for busy and hard days, verses to pray in the morning, and an easy five-minute morning routine. #morningprayer #prayer #faith #christian",
+  "dueAt": "2026-11-10T23:26:52.000Z",
+  "sentAt": "2026-11-10T23:26:52.000Z",
+  "createdAt": "2026-11-10T23:26:52.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/b4/83/21/b483215e1f8c21530bbfa4bf03817b5b.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/b4/83/21/b483215e1f8c21530bbfa4bf03817b5b.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Lamentations 3:22–23 on a starry purple background: It is because of Yahweh’s loving kindnesses that we are not consumed, because his mercies don’t fail. They are new every morning. Great is your faithfulness.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f911",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses about peace: the peace Jesus gives (John 14:27), the peace that surpasses all understanding (Philippians 4:7), and peace to rest in, plus the Aaronic blessing and a prayer for peace. #bibleverses #peace #faith #christian",
+  "dueAt": "2026-11-10T23:25:24.000Z",
+  "sentAt": "2026-11-10T23:25:24.000Z",
+  "createdAt": "2026-11-10T23:25:24.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/16/8e/a0/168ea03c95ffa9c8abc39af015302ecd.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/16/8e/a0/168ea03c95ffa9c8abc39af015302ecd.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "John 14:27 on a starry purple background: Peace I leave with you. My peace I give to you; not as the world gives, I give to you. Don’t let your heart be troubled, neither let it be fearful.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 13,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f90f",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "The full words of the Lord's Prayer (Our Father) from Matthew 6:9–13, with a simple line-by-line explanation of what each part means and how to pray it today. #lordsprayer #prayer #bible #faith",
+  "dueAt": "2026-11-10T23:27:17.000Z",
+  "sentAt": "2026-11-10T23:27:17.000Z",
+  "createdAt": "2026-11-10T23:27:17.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/13/03/aa/1303aae6d350e2e16ecd149ec6664487.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/13/03/aa/1303aae6d350e2e16ecd149ec6664487.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Matthew 6:9–10 on a starry purple background: Our Father in heaven, may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it is in heaven.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 9,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f90d",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses about healing for the body, the heart, and the soul, including Psalm 147:3, Jeremiah 17:14, and Isaiah 53:5, with honest encouragement for when healing takes time and a prayer for healing. #bibleverses #healing #prayer #faith",
+  "dueAt": "2026-11-10T23:25:05.000Z",
+  "sentAt": "2026-11-10T23:25:05.000Z",
+  "createdAt": "2026-11-10T23:25:05.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/71/b6/df/71b6df6448103be25162d14adfc77ccc.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/71/b6/df/71b6df6448103be25162d14adfc77ccc.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Psalm 147:3 on a starry purple background: He heals the broken in heart, and binds up their wounds.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 6,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f903",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "What Psalm 91 means, with the full text, its promises of protection, how Jesus answered when it was misused, and how to pray it today. #psalm91 #biblestudy #faith #protection",
+  "dueAt": "2026-11-10T23:29:23.000Z",
+  "sentAt": "2026-11-10T23:29:23.000Z",
+  "createdAt": "2026-11-10T23:29:23.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/e3/bb/6a/e3bb6a4bdbc83532fd5e148a613bd8a1.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/e3/bb/6a/e3bb6a4bdbc83532fd5e148a613bd8a1.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Psalm 91:1–2 on a starry purple background: He who dwells in the secret place of the Most High will rest in the shadow of the Almighty. I will say of Yahweh, He is my refuge and my fortress; my God, in whom I trust.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 14,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f901",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses for loneliness, including Deuteronomy 31:8, Hebrews 13:5, and Psalm 68:6, with a prayer for when you feel alone and small steps toward connection. #bibleverses #loneliness #faith #christian",
+  "dueAt": "2026-11-10T23:26:13.000Z",
+  "sentAt": "2026-11-10T23:26:13.000Z",
+  "createdAt": "2026-11-10T23:26:13.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/6a/06/6d/6a066ddfc1431842ec18465233f5b7e7.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/6a/06/6d/6a066ddfc1431842ec18465233f5b7e7.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Deuteronomy 31:8 on a starry purple background: Yahweh himself is who goes before you. He will be with you. He will not fail you nor forsake you.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 8,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8ff",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses about strength for weary days and hard seasons, including Isaiah 40:31, Philippians 4:13, and Psalm 46:1, with what Philippians 4:13 really means in context and a prayer for strength. #bibleverses #strength #faith #christian",
+  "dueAt": "2026-11-10T23:25:15.000Z",
+  "sentAt": "2026-11-10T23:25:15.000Z",
+  "createdAt": "2026-11-10T23:25:15.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/ea/2c/49/ea2c494c0266dfe9c7b9a962df51a8bb.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/ea/2c/49/ea2c494c0266dfe9c7b9a962df51a8bb.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Isaiah 40:31 on a starry purple background: but those who wait for Yahweh will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 7,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8fd",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "A prayer for anxiety you can pray right now, short prayers for sudden anxiety, overthinking, and anxious nights, Scripture to pray, and a simple four-step way to bring worry to God. #prayerforanxiety #prayer #anxiety #faith",
+  "dueAt": "2026-11-10T23:39:59.000Z",
+  "sentAt": "2026-11-10T23:39:59.000Z",
+  "createdAt": "2026-11-10T23:39:59.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/1e/0b/d0/1e0bd0bcadfabe58d5972f1b02ccc7b6.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/1e/0b/d0/1e0bd0bcadfabe58d5972f1b02ccc7b6.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Philippians 4:6 on a starry purple background: In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 8,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8fb",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Short, encouraging Bible verses for discouraging days, including Joshua 1:9, Galatians 6:9, and Zephaniah 3:17, with ideas for sharing them with a friend and a prayer for encouragement. #bibleverses #encouragement #faith #christian",
+  "dueAt": "2026-11-10T23:26:04.000Z",
+  "sentAt": "2026-11-10T23:26:04.000Z",
+  "createdAt": "2026-11-10T23:26:04.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/0d/3c/70/0d3c707c8554cb453a1caaf3fc93b1a7.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/0d/3c/70/0d3c707c8554cb453a1caaf3fc93b1a7.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Joshua 1:9 on a starry purple background: Be strong and courageous. Don’t be afraid. Don’t be dismayed, for Yahweh your God is with you wherever you go.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 8,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8f9",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses about fear and courage, including Isaiah 41:10, Psalm 56:3, and 2 Timothy 1:7, with short reflections and a prayer for when you're afraid. #bibleverses #fear #courage #faith",
+  "dueAt": "2026-11-10T23:25:55.000Z",
+  "sentAt": "2026-11-10T23:25:55.000Z",
+  "createdAt": "2026-11-10T23:25:55.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/2f/96/79/2f967901f9a5337a2869fc9e3028d048.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/2f/96/79/2f967901f9a5337a2869fc9e3028d048.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Isaiah 41:10 on a starry purple background: Don’t you be afraid, for I am with you. Don’t be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 9,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8f5",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "13 Bible verses about hope for hard seasons, waiting, and the future, including Romans 15:13, Jeremiah 29:11, and Lamentations 3:22–23, each with a short reflection and a prayer for hope. #bibleverses #hope #faith #christian",
+  "dueAt": "2026-11-10T23:24:37.000Z",
+  "sentAt": "2026-11-10T23:24:37.000Z",
+  "createdAt": "2026-11-10T23:24:37.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/9e/42/95/9e42952605332bcd3e2ad371f4120a67.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/9e/42/95/9e42952605332bcd3e2ad371f4120a67.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Romans 15:13 on a starry purple background: Now may the God of hope fill you with all joy and peace in believing, that you may abound in hope in the power of the Holy Spirit.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 8,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8f3",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Free printable Bible reading plans: a 365-day plan that covers all 1,189 chapters in a year (about 15 minutes a day) and a one-page 30-day starter plan for beginners. Free to print and share. #biblereadingplan #bibleinayear #printable #biblestudy",
+  "dueAt": "2026-11-10T23:27:47.000Z",
+  "sentAt": "2026-11-10T23:27:47.000Z",
+  "createdAt": "2026-11-10T23:27:47.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/d8/65/a8/d865a83ff3e35a78199395b15808947d.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/d8/65/a8/d865a83ff3e35a78199395b15808947d.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Free printable Bible reading plans: a 365-day Read the Bible in a Year plan and a 30-day Bible starter plan, shown as printed pages.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 41,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8f1",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Psalm 23 explained verse by verse: the shepherd, the still waters, the valley of the shadow of death, and the table prepared for you, with the full text and how to pray it. #psalm23 #biblestudy #faith #christian",
+  "dueAt": "2026-11-10T23:29:06.000Z",
+  "sentAt": "2026-11-10T23:29:06.000Z",
+  "createdAt": "2026-11-10T23:29:06.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/ca/99/b3/ca99b3031ecac6357508623d743878fc.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/ca/99/b3/ca99b3031ecac6357508623d743878fc.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Psalm 23:4 on a starry purple background: Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 16,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8ef",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Comforting Bible verses for grief and the loss of a loved one, including Psalm 34:18, John 11:35, and Revelation 21:4, with gentle reflections, a prayer for comfort, and honest answers about grieving as a Christian. #grief #bibleverses #comfort #faith",
+  "dueAt": "2026-11-10T23:25:33.000Z",
+  "sentAt": "2026-11-10T23:25:33.000Z",
+  "createdAt": "2026-11-10T23:25:33.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/b8/d7/1c/b8d71c0533065de1461e386e9947ea0d.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/b8/d7/1c/b8d71c0533065de1461e386e9947ea0d.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Psalm 34:18 on a starry purple background: Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 10,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 10,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8ed",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "13 Bible verses about anxiety and worry, grouped by what you're feeling: a racing mind, worry about tomorrow, feeling overwhelmed. Includes Philippians 4:6–7, 1 Peter 5:7, and Isaiah 41:10, plus a short prayer for anxiety. #bibleverses #anxiety #faith #christian",
+  "dueAt": "2026-11-10T23:23:52.000Z",
+  "sentAt": "2026-11-10T23:23:52.000Z",
+  "createdAt": "2026-11-10T23:23:52.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/f7/72/c3/f772c3c1a8fa0d4fdbcf16182ead9978.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/f7/72/c3/f772c3c1a8fa0d4fdbcf16182ead9978.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "1 Peter 5:7 on a starry purple background: casting all your worries on him, because he cares for you.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 4,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.342Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8e9",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "New to the Bible? Where to start reading, which books to read first, a simple 30-day starter plan, and practical tips for understanding what you read. #biblestudy #bibleforbeginners #readingplan #faith",
+  "dueAt": "2026-11-10T23:40:19.000Z",
+  "sentAt": "2026-11-10T23:40:19.000Z",
+  "createdAt": "2026-11-10T23:40:19.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/6c/aa/9c/6caa9c8b217e22e16181e9395cb90396.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/6c/aa/9c/6caa9c8b217e22e16181e9395cb90396.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Psalm 119:105 on a starry purple background: Your word is a lamp to my feet, and a light for my path.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 8,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8e7",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Bible verses about God's love: unconditional, everlasting, and shown in Jesus. Includes John 3:16, Romans 8:38–39, and Zephaniah 3:17, with a prayer to receive God's love. #godslove #bibleverses #faith #christian",
+  "dueAt": "2026-11-10T23:26:23.000Z",
+  "sentAt": "2026-11-10T23:26:23.000Z",
+  "createdAt": "2026-11-10T23:26:23.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/6c/5e/c1/6c5ec1e507f47c8a6a11647c934cc3dc.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/6c/5e/c1/6c5ec1e507f47c8a6a11647c934cc3dc.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Zephaniah 3:17 on a starry purple background: Yahweh, your God, is among you, a mighty one who will save. He will rejoice over you with joy. He will calm you in his love. He will rejoice over you with singing.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 8.33,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 12,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0c019a2a275d918f8e5",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "What Jeremiah 29:11 really means: the verse in context, who it was first written to, what \"hope and a future\" meant for exiles in Babylon, and what it means for you today. #jeremiah2911 #biblestudy #hope #faith",
+  "dueAt": "2026-11-10T23:29:38.000Z",
+  "sentAt": "2026-11-10T23:29:38.000Z",
+  "createdAt": "2026-11-10T23:29:38.000Z",
+  "channelId": "6af4f0be62b70b94b0fd4a93",
+  "channelService": "pinterest",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://i.pinimg.com/564x/65/a3/35/65a335279ffdfacb56458eecdc64e7a5.jpg",
+    "thumbnail": "https://i.pinimg.com/150x150/65/a3/35/65a335279ffdfacb56458eecdc64e7a5.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "Jeremiah 29:11 on a starry purple background: For I know the thoughts that I think toward you, says Yahweh, thoughts of peace, and not of evil, to give you hope and a future.",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "clicks",
+    "name": "Pin Clicks",
+    "description": "How many times people clicked your Pin to open it in closeup. Doesn't include clicks through to your link.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "impressions",
+    "name": "Impressions",
+    "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced.",
+    "value": 12,
+    "unit": "count"
+   },
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Reactions",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:51:49.341Z"
+ },
+ {
+  "id": "6af4f0aa2353901db9d1df53",
+  "status": "sent",
+  "allowedActions": [
+   "viewPost",
+   "sharePostLink",
+   "copyPostLink",
+   "updatePostTags",
+   "addPostNote",
+   "updateShopGridLink"
+  ],
+  "via": "network",
+  "text": "Worship Room is an all-in-one app for your journey with God: daily devotionals, a Bible reader, reading plans, journaling, an AI Bible guide, a community prayer wall, and worship music, all in one place and ad-free.\n\nOpening mid-2027. Join the list at the link in our bio and we'll send one note on the day the doors open.\n\n#christianapp #devotional #bibleapp #prayer #worshipmusic",
+  "dueAt": "2026-11-10T00:32:17.000Z",
+  "sentAt": "2026-11-10T00:32:17.000Z",
+  "createdAt": "2026-11-10T00:32:17.000Z",
+  "channelId": "6af4f0a862b70b94b0fd4a04",
+  "channelService": "instagram",
+  "shareMode": "customScheduled",
+  "tags": [],
+  "error": null,
+  "assets": [
+   {
+    "__typename": "ImageAsset",
+    "id": null,
+    "type": "image",
+    "mimeType": "image/jpeg",
+    "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af4efb33c5faa5a9f4e0276/6af4f0a862b70b94b0fd4a04/6af4f0aa2353901db9d1df53_thumbnail.jpg",
+    "thumbnail": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af4efb33c5faa5a9f4e0276/6af4f0a862b70b94b0fd4a04/6af4f0aa2353901db9d1df53_thumbnail.jpg",
+    "image": {
+     "width": 0,
+     "height": 0,
+     "altText": "",
+     "isAnimated": false,
+     "animatedThumbnail": null,
+     "userTags": null
+    }
+   }
+  ],
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on Instagram. This shows how many people reacted to your post.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 0,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Views",
+    "description": "How many times your post was viewed. Helps you understand how much attention your content gets.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "follows",
+    "name": "Follows",
+    "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 0,
+    "unit": "count"
+   }
+  ],
+  "metricsUpdatedAt": "2026-11-24T09:50:53.592Z"
+ }
+]

@@ -20,12 +20,18 @@ MIN_POSTS, MIN_DENOM, RATIO = 4, 300, 1.5
 TOO_EARLY = {'tiktok': 3, 'instagram': 3, 'pinterest': 30}
 
 
+def _utc(s):
+    return dt.datetime.fromisoformat(s.replace('Z', '+00:00')).astimezone(dt.timezone.utc).replace(second=0, microsecond=0)
+
+
 def load_schedule():
     idx = {}
     for f in glob.glob(os.path.join(ROOT, 'content', 'schedules', '*.json')):
         for p in json.load(open(f)):
             urls = [p['url']] if p.get('url') else [i['url'] for i in p.get('images', [])]
             for u in urls: idx[(p['channel'], os.path.basename(u))] = p
+            # Buffer re-hosts TikTok videos under its own URL, so also index by channel + scheduled time
+            if p.get('when'): idx[(p['channel'], _utc(p['when']))] = p
     return idx
 
 
@@ -45,7 +51,9 @@ def rows(nodes, now):
         n = n.get('node', n)
         ch = n.get('channelService')
         src = [a.get('source', '') for a in n.get('assets') or []]
-        p = next((sched[(ch, os.path.basename(s))] for s in src if (ch, os.path.basename(s)) in sched), {})
+        p = next((sched[(ch, os.path.basename(s))] for s in src if (ch, os.path.basename(s)) in sched), None)
+        if p is None and n.get('dueAt'): p = sched.get((ch, _utc(n['dueAt'])), {})
+        p = p or {}
         sent = dt.datetime.fromisoformat((n.get('sentAt') or n['dueAt']).replace('Z', '+00:00'))
         age = (now - sent).total_seconds() / 86400
         kind = p.get('kind') or ('video' if any(s.endswith('.mp4') for s in src) else ('carousel' if len(src) > 1 else 'image'))
@@ -56,7 +64,7 @@ def rows(nodes, now):
                         denom=denom or 0, saves=metric(n, 'saves') or 0, shares=metric(n, 'shares') or 0,
                         comments=metric(n, 'comments') or 0, likes=metric(n, 'reactions', 'likes') or 0,
                         clicks=metric(n, 'outboundClicks', 'linkClicks') , closeups=metric(n, 'clicks') if ch == 'pinterest' else None,
-                        follows=metric(n, 'follows'), watch=metric(n, 'averageWatchTime', 'watch'), seconds=p.get('seconds')))
+                        follows=metric(n, 'follows'), watch=metric(n, 'averageTimeWatched', 'averageWatchTime', 'avgWatchTime'), seconds=p.get('seconds')))
     return out
 
 

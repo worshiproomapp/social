@@ -18,3 +18,11 @@ the monthly pack treats these as things to test, not rules.
 - Pinterest (all pins since Nov 10): 131 impressions, 2 closeups, 0 saves across 20 pins. Best single pin: the printable
   reading plan (26 impressions). Too early to judge.
 - TikTok strips caption line breaks. Keep TikTok captions as short paragraphs that read fine run together. (Observed, not a metric.)
+
+## 2026-11-24 (monthly pack run; report: content/reports/2026-11-24.md)
+- No FINDINGS. Every comparison is below the 4-posts / 300-reach rule.
+- TikTok average watch, corrected: 2.06 s (Philippians 4:6–7, 132 reach) and 3.02 s (Psalm 4:8 sleep prayer, 132 reach).
+  The analyzer had been reading total time watched (5.08 s, 7.3 s) as the average, and could not join TikTok posts to the
+  pack because Buffer re-hosts the video; both fixed in tools/analyze.py (exact `averageTimeWatched`, join by channel + time).
+- Instagram: Psalm 23 Reel 100 reach, 6 likes, 1 comment, 0 saves; average watch 3.67 s. Both feed images: 0 reach.
+- Pinterest: 22 pins, all under 30 days old (too early). The Nov 10 pins hold 4–41 impressions each; 2 closeups, 0 saves.
