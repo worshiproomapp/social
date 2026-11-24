@@ -17,7 +17,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-hope-psalm-130-5-6.mp4",
   "thumbnail_ms": 3500,
-  "seconds": 22.63
+  "seconds": 22.63,
+  "buffer_id": "6b05f288700a24460ebb47ac"
  },
  {
   "id": "2026-12-pin-01",
@@ -34,7 +35,8 @@
   "guide": "prayer-for-healing",
   "tracked_link": "https://worshiproom.com/guides/prayer-for-healing?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-01&utm_term=prayer-for-healing",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-healing.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-healing.png",
+  "buffer_id": "6b05f292700a24460ebb4bee"
  },
  {
   "id": "2026-12-ig-01",
@@ -51,7 +53,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-hope-psalm-130-5-6.mp4",
   "thumbnail_ms": 3500,
-  "seconds": 22.63
+  "seconds": 22.63,
+  "buffer_id": "6b05f29378379dac1406028b"
  },
  {
   "id": "2026-12-pin-02",
@@ -68,7 +71,8 @@
   "guide": "prayer-for-grief",
   "tracked_link": "https://worshiproom.com/guides/prayer-for-grief?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-02&utm_term=prayer-for-grief",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-grief-holidays.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-grief-holidays.png",
+  "buffer_id": "6b05f2abad5aa59f729b7522"
  },
  {
   "id": "2026-12-tt-02",
@@ -88,7 +92,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-sleep-psalm-121-4.mp4",
   "thumbnail_ms": 3500,
-  "seconds": 27.51
+  "seconds": 27.51,
+  "buffer_id": "6b05f2acd5ccaecbfb854f02"
  },
  {
   "id": "2026-12-ig-02",
@@ -108,7 +113,8 @@
   "guide": "encouraging-bible-verses",
   "tracked_link": "https://worshiproom.com/guides/encouraging-bible-verses?utm_source=instagram&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-ig-02&utm_term=encouraging-bible-verses",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/i-ig-lamentations-3-22-23.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/i-ig-lamentations-3-22-23.png",
+  "buffer_id": "6b05f2acf86f2594b8802a4d"
  },
  {
   "id": "2026-12-tt-03",
@@ -151,7 +157,8 @@
     "url": "https://worshiproomapp.github.io/social/media/2026-12/c-grief-holidays-tt-06.png",
     "alt": "Slide 6 of 6. Purple galaxy background. Worship Room. Be gentle with yourself this season. Go deeper: A prayer for comfort in grief. worshiproom.com."
    }
-  ]
+  ],
+  "buffer_id": "6b05f2adad5aa59f729b7632"
  },
  {
   "id": "2026-12-pin-03",
@@ -168,7 +175,8 @@
   "guide": "how-to-pray",
   "tracked_link": "https://worshiproom.com/guides/how-to-pray?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-03&utm_term=how-to-pray",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-how-to-pray.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-how-to-pray.png",
+  "buffer_id": "6b05f2c9d5ccaecbfb855baf"
  },
  {
   "id": "2026-12-ig-03",
@@ -212,7 +220,8 @@
     "url": "https://worshiproomapp.github.io/social/media/2026-12/c-grief-holidays-ig-06.png",
     "alt": "Slide 6 of 6. Purple galaxy background. Worship Room. Be gentle with yourself this season. Go deeper: A prayer for comfort in grief. worshiproom.com."
    }
-  ]
+  ],
+  "buffer_id": "6b05f2cac966bca3fadb9358"
  },
  {
   "id": "2026-12-pin-04",
@@ -229,7 +238,8 @@
   "guide": "prayer-for-strength",
   "tracked_link": "https://worshiproom.com/guides/prayer-for-strength?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-04&utm_term=prayer-for-strength",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-strength.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-strength.png",
+  "buffer_id": "6b05f2cad5ccaecbfb855c0e"
  },
  {
   "id": "2026-12-tt-04",
@@ -249,7 +259,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-anxiety-psalm-94-18-19.mp4",
   "thumbnail_ms": 2700,
-  "seconds": 18.0
+  "seconds": 18.0,
+  "buffer_id": "6b05f2cbc966bca3fadb93ce"
  },
  {
   "id": "2026-12-ig-04",
@@ -266,7 +277,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-anxiety-psalm-94-18-19.mp4",
   "thumbnail_ms": 2700,
-  "seconds": 18.0
+  "seconds": 18.0,
+  "buffer_id": "6b05f2cc700a24460ebb6236"
  },
  {
   "id": "2026-12-tt-05",
@@ -286,7 +298,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-lonely-isaiah-49-15.mp4",
   "thumbnail_ms": 2700,
-  "seconds": 18.54
+  "seconds": 18.54,
+  "buffer_id": "6b05f2e6d5ccaecbfb8563f4"
  },
  {
   "id": "2026-12-pin-05",
@@ -303,7 +316,8 @@
   "guide": "prayer-for-guidance",
   "tracked_link": "https://worshiproom.com/guides/prayer-for-guidance?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-05&utm_term=prayer-for-guidance",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-guidance.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-for-guidance.png",
+  "buffer_id": "6b05f2e7ad5aa59f729b8606"
  },
  {
   "id": "2026-12-ig-05",
@@ -323,7 +337,8 @@
   "guide": "bible-verses-about-strength",
   "tracked_link": "https://worshiproom.com/guides/bible-verses-about-strength?utm_source=instagram&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-ig-05&utm_term=bible-verses-about-strength",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/i-ig-psalm-46-1.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/i-ig-psalm-46-1.png",
+  "buffer_id": "6b05f2e8700a24460ebb6edb"
  },
  {
   "id": "2026-12-pin-06",
@@ -340,7 +355,8 @@
   "guide": "printable-bible-reading-plan",
   "tracked_link": "https://worshiproom.com/guides/printable-bible-reading-plan?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-06&utm_term=printable-bible-reading-plan",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-printable-plan-2027.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-printable-plan-2027.png",
+  "buffer_id": "6b05f2e8ad5aa59f729b8654"
  },
  {
   "id": "2026-12-tt-06",
@@ -360,7 +376,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-love-1-john-4-9.mp4",
   "thumbnail_ms": 2700,
-  "seconds": 17.22
+  "seconds": 17.22,
+  "buffer_id": "6b05f2e9ad5aa59f729b86b1"
  },
  {
   "id": "2026-12-ig-06",
@@ -377,7 +394,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-love-1-john-4-9.mp4",
   "thumbnail_ms": 2700,
-  "seconds": 17.22
+  "seconds": 17.22,
+  "buffer_id": "6b05f2ea700a24460ebb6f76"
  },
  {
   "id": "2026-12-pin-07",
@@ -394,7 +412,8 @@
   "guide": "bible-verses-about-hope",
   "tracked_link": "https://worshiproom.com/guides/bible-verses-about-hope?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-07&utm_term=bible-verses-about-hope",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-hope-waiting.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-hope-waiting.png",
+  "buffer_id": "6b05f30ff86f2594b88051bb"
  },
  {
   "id": "2026-12-tt-07",
@@ -414,7 +433,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-christmas-luke-2-10-11.mp4",
   "thumbnail_ms": 3500,
-  "seconds": 29.01
+  "seconds": 29.01,
+  "buffer_id": "6b05f311d5ccaecbfb857304"
  },
  {
   "id": "2026-12-pin-08",
@@ -431,7 +451,8 @@
   "guide": "how-to-start-a-prayer-journal",
   "tracked_link": "https://worshiproom.com/guides/how-to-start-a-prayer-journal?utm_source=pinterest&utm_medium=social&utm_campaign=2026-12-pack&utm_content=2026-12-pin-08&utm_term=how-to-start-a-prayer-journal",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-journal.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-12/pin-prayer-journal.png",
+  "buffer_id": "6b05f31178379dac14063d09"
  },
  {
   "id": "2026-12-ig-07",
@@ -448,7 +469,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-12/v-christmas-luke-2-10-11.mp4",
   "thumbnail_ms": 3500,
-  "seconds": 29.01
+  "seconds": 29.01,
+  "buffer_id": "6b05f31278379dac14063d8d"
  },
  {
   "id": "2026-12-tt-08",
@@ -491,7 +513,8 @@
     "url": "https://worshiproomapp.github.io/social/media/2026-12/c-bible-in-a-year-2027-tt-06.png",
     "alt": "Slide 6 of 6. Purple galaxy background. Worship Room. Start any day of the year. Go deeper: How to read the Bible in a year. worshiproom.com."
    }
-  ]
+  ],
+  "buffer_id": "6b05f313700a24460ebb814a"
  },
  {
   "id": "2026-12-ig-08",
@@ -535,6 +558,7 @@
     "url": "https://worshiproomapp.github.io/social/media/2026-12/c-bible-in-a-year-2027-ig-06.png",
     "alt": "Slide 6 of 6. Purple galaxy background. Worship Room. Start any day of the year. Go deeper: How to read the Bible in a year. worshiproom.com."
    }
-  ]
+  ],
+  "buffer_id": "6b05f314ad5aa59f729b95b8"
  }
 ]
