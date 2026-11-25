@@ -67,17 +67,30 @@ sent with the signup and stored in new D1 columns, plus the privacy policy sente
 Not deployed. Until it is, platform-level traffic comes from Cloudflare's referrer report (pinterest.com,
 tiktok.com, instagram.com / l.instagram.com) and guide-level signups from `npm run list:count` / D1 `source`.
 
+## Cadence (from 2026-11-25)
+
+Weekly packs, 5 posts per channel per week: the most Buffer Free's 10-post queue allows with a 5-day review window
+(see the runbook). The research behind it:
+- TikTok: Buffer's study of 11.4M posts found going from 1 to 2–5 posts a week gives the steepest per-post gain; more raises
+  the ceiling (more chances at an outlier) rather than the average.
+- Instagram: Buffer's study of 2M posts found 3–5 posts a week more than doubles follower growth versus 1–2, with diminishing
+  returns above that.
+- Pinterest: current guidance (Tailwind) is 3–5 fresh pins a week for new accounts; fresh images beat re-saves, and pins to the
+  same page shouldn't go out the same day.
+Quality outranks the count: a weak week ships fewer posts. December ramps up (about 4 a week) while the monthly December
+pack drains from the queue; January onward runs at 5.
+
 ## Formats and platforms
 
-**TikTok** (8 a month): the hook decides everything. Test batch: average watch 2.2s and 3.0s on 30.5s and 37.4s videos (two posts:
+**TikTok** (up to 5 a week): the hook decides everything. Test batch: average watch 2.2s and 3.0s on 30.5s and 37.4s videos (two posts:
 a hypothesis, not a finding). Frame 0 shows a plain question people search, in big type. Videos stay 15–30s. Two of the eight are
 photo-mode carousels (1080×1920, swipeable). Default 7:30 PM, sleep and night topics 9:00 PM.
 
-**Instagram** (8 a month): 4 Reels (reused TikTok videos, 2+ days later) for reach; the other 4 are save-worthy feed posts:
+**Instagram** (up to 5 a week): ~3 Reels (reused TikTok videos, 2+ days later) for reach; ~2 save-worthy feed posts:
 carousels (1080×1350, 5–7 slides: a question, Scripture with a line of context from our guide, a practical step, the end card)
 and single verse images while the format experiment runs.
 
-**Pinterest** (8 a month): Pinterest is a search engine. The title is the search query; the description answers it; the pin links
+**Pinterest** (up to 5 fresh pins a week, each to a different guide): Pinterest is a search engine. The title is the search query; the description answers it; the pin links
 to the guide that answers it fully. Pins take weeks to months to distribute: judge a pin no earlier than 30 days, and prefer
 90-day reads. Fresh pins on the same guide (new image, new title angle) are how Pinterest wants repeat topics.
 
@@ -105,9 +118,9 @@ Running from December 2026:
 | `ig-feed-format` | Carousels earn more saves than single verse images | saves per 100 reach | carousel, image | 4+ judgeable posts per arm |
 | `tt-format` | Photo-mode carousels reach as many people as videos on a new account | reach per post, saves per 100 reach | video, photo | 4+ judgeable photo posts |
 
-Experiments carry across packs until every arm has its minimum. December runs 3 standard + 3 fast (`tt-pace`) and 2 + 2
-(`ig-feed-format`); January adds at least 1 more per `tt-pace` arm and 2 more per `ig-feed-format` arm, keeping the same
-experiment names so the posts pool. No winner is declared, and nothing in the playbook changes, until `tools/analyze.py`
+Experiments carry across packs until every arm has its minimum. The December monthly pack has 3 standard + 3 fast
+(`tt-pace`), 2 + 2 (`ig-feed-format`) and 2 photo posts (`tt-format`); the weekly packs keep assigning posts to every arm
+that is short, under the same experiment names so the posts pool, so most arms reach 4 in December. No winner is declared, and nothing in the playbook changes, until `tools/analyze.py`
 labels the comparison a FINDING. If January still falls short (for example, posts too new to judge), keep going in February.
 
 ## What we know (FINDINGS only)

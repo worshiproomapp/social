@@ -1,4 +1,4 @@
-"""Build a monthly content pack.
+"""Build a content pack (weekly: pack id "YYYY-Www", ISO week of the posts; older packs used "YYYY-MM").
 
     python3 tools/build.py content/packs/2026-12.json            # check + render everything
     python3 tools/build.py content/packs/2026-12.json --check    # checks only (fast)
@@ -66,6 +66,33 @@ BANNED = [  # (regex, reason, case_sensitive)
 
 def norm(s):
     return re.sub(r'[\s“”"]+', ' ', s).strip()
+
+
+MAX_PER_WEEK = 5      # per channel per ISO week: the most Buffer Free's 10-post queue holds with a 5-day review window
+GUIDE_GAP_DAYS = 14   # the same guide on the same channel at most once per 14 days
+
+
+def cadence_errors(pack):
+    """Weekly volume and topic spacing, counting posts already committed in content/schedules/ from other packs."""
+    import datetime as dt, glob as _glob
+    me = pack.get('pack') or pack.get('month')
+    if str(me).startswith('YYYY'): return []  # the shape example has placeholder dates
+    posts = [(p['channel'], dt.datetime.fromisoformat(p['when']), guide_slug(p['link']), p.get('id', '?')) for p in pack['posts']]
+    other = []
+    for f in _glob.glob(os.path.join(ROOT, 'content', 'schedules', '*.json')):
+        if os.path.basename(f)[:-5] == me: continue
+        for p in json.load(open(f)):
+            other.append((p['channel'], dt.datetime.fromisoformat(p['when']), p.get('guide') or guide_slug(p['link']), p.get('id', '?')))
+    errs, allp = [], posts + other
+    weeks = {}
+    for ch, w, g, i in allp: weeks.setdefault((ch, w.isocalendar()[:2]), []).append(i)
+    for ch, w, g, i in posts:
+        n = len(weeks[(ch, w.isocalendar()[:2])])
+        if n > MAX_PER_WEEK: errs.append(f'{i}: {ch} has {n} posts in ISO week {w.isocalendar()[1]} (max {MAX_PER_WEEK})')
+        for ch2, w2, g2, i2 in allp:
+            if i2 != i and ch2 == ch and g2 == g and abs((w2 - w).total_seconds()) < GUIDE_GAP_DAYS * 86400:
+                errs.append(f'{i}: {ch} already links {g} on {w2.date()} ({i2}); keep {GUIDE_GAP_DAYS}+ days between'); break
+    return sorted(set(errs))
 
 
 def check(pack):
@@ -154,6 +181,7 @@ def check(pack):
         blob = ' '.join([i.get('kicker', ''), i.get('headline', ''), i.get('leadin', ''), i.get('go_deeper', ''), i.get('footer', '')])
         for rx, why, cs in BANNED:
             if re.search(rx, blob, 0 if cs else re.I): errs.append(f"{i['id']}: on-screen text breaks rule: {why}")
+    errs += cadence_errors(pack)
     return errs
 
 
@@ -251,7 +279,7 @@ h1{{font:500 28px Georgia,serif;margin:0 0 6px}}.lede{{color:#a59dbf;margin:0 0 
 if __name__ == '__main__':
     path = sys.argv[1]
     pack = json.load(open(path))
-    month = pack['month']
+    month = pack.get('pack') or pack['month']
     errs = check(pack)
     if errs:
         print('CHECK FAILED:'); [print(' -', x) for x in errs]; sys.exit(1)
