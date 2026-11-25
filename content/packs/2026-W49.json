@@ -1,0 +1,366 @@
+{
+ "pack": "2026-W49",
+ "template": 3,
+ "note": "Week of Nov 30–Dec 6, 2026 (first week of Advent). The December monthly pack already holds 2 posts per channel this week and 8 in each queue, so the 10-post Buffer cap leaves room for 2 per channel. Topics the week was missing: peace, prayer how-tos (morning prayer, the Lord's Prayer), Jeremiah 29:11, Psalm 91. Experiments: tt-pace gets its 4th standard and 4th fast video; ig-feed-format gets a 3rd carousel and a 3rd image.",
+ "experiments": [
+  {
+   "name": "tt-pace",
+   "hypothesis": "A 1.5 s hook and quicker reveals (15–20 s videos) hold a bigger share of the video than the standard pace.",
+   "metric": "average watch % of length",
+   "arms": [
+    "standard",
+    "fast"
+   ],
+   "min_per_arm": 4
+  },
+  {
+   "name": "ig-feed-format",
+   "hypothesis": "Carousels earn more saves than single verse images.",
+   "metric": "saves per 100 reach",
+   "arms": [
+    "carousel",
+    "image"
+   ],
+   "min_per_arm": 4
+  },
+  {
+   "name": "tt-format",
+   "hypothesis": "Photo-mode carousels reach as many people as videos on a new account.",
+   "metric": "reach per post, saves per 100 reach (videos are the comparison group: TikTok posts of kind video)",
+   "arms": [
+    "video",
+    "photo"
+   ],
+   "min_per_arm": 4
+  }
+ ],
+ "videos": [
+  {
+   "id": "v-peace-john-14-27",
+   "kicker": "Bible verses about peace",
+   "hook": "Need a peace that holds?",
+   "hook_em": "holds?",
+   "leadin": "Jesus said this the night before the cross:",
+   "pages": [
+    {
+     "chunks": [
+      "Peace I leave with you.",
+      "My peace I give to you;",
+      "not as the world gives,",
+      "I give to you.",
+      "Don’t let your heart",
+      "be troubled,",
+      "neither let it",
+      "be fearful."
+     ],
+     "open": true,
+     "close": true,
+     "ref": "John 14:27"
+    }
+   ],
+   "go_deeper": "Bible verses about peace",
+   "music": "D",
+   "verify": [
+    [
+     "JHN",
+     14,
+     27,
+     27
+    ]
+   ],
+   "pace": "fast",
+   "link": "https://worshiproom.com/guides/bible-verses-about-peace"
+  },
+  {
+   "id": "v-morning-psalm-5-3",
+   "kicker": "A morning prayer",
+   "hook": "Start tomorrow with this prayer.",
+   "hook_em": "this prayer.",
+   "leadin": "Morning prayer is as old as the Psalms:",
+   "pages": [
+    {
+     "chunks": [
+      "Yahweh, in the morning",
+      "you will hear my voice.",
+      "In the morning",
+      "I will lay my requests",
+      "before you,",
+      "and will watch",
+      "expectantly."
+     ],
+     "open": true,
+     "close": true,
+     "ref": "Psalm 5:3"
+    },
+    {
+     "label": "A prayer for the morning",
+     "style": "prayer",
+     "chunks": [
+      "Lord, I give You this day.",
+      "Guide my steps",
+      "and help me",
+      "notice You today."
+     ]
+    }
+   ],
+   "go_deeper": "A morning prayer to start your day",
+   "music": "G",
+   "verify": [
+    [
+     "PSA",
+     5,
+     3,
+     3
+    ]
+   ],
+   "link": "https://worshiproom.com/guides/morning-prayer"
+  }
+ ],
+ "images": [
+  {
+   "id": "i-ig-jeremiah-29-11",
+   "w": 1080,
+   "h": 1350,
+   "kicker": "Jeremiah 29:11 meaning",
+   "headline": "A promise for a long season.",
+   "headline_em": "long season.",
+   "leadin": "It came with news that the exile would last seventy years.",
+   "quote": "For I know the thoughts that I think toward you,” says Yahweh, “thoughts of peace, and not of evil, to give you hope and a future.",
+   "ref": "Jeremiah 29:11",
+   "go_deeper": "Jeremiah 29:11 meaning and context",
+   "bg": 26000,
+   "verify": [
+    [
+     "JER",
+     29,
+     11,
+     11
+    ]
+   ]
+  },
+  {
+   "id": "pin-peace-of-mind",
+   "w": 1000,
+   "h": 1500,
+   "kicker": "Bible verses about peace",
+   "headline": "A Bible verse for peace of mind.",
+   "headline_em": "peace of mind.",
+   "leadin": "Perfect peace, literally “peace, peace” in Hebrew, for a mind that stays on God.",
+   "quote": "You will keep whoever’s mind is steadfast in perfect peace, because he trusts in you.",
+   "ref": "Isaiah 26:3",
+   "go_deeper": "Bible verses about peace",
+   "bg": 38000,
+   "verify": [
+    [
+     "ISA",
+     26,
+     3,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "pin-psalm-91",
+   "w": 1000,
+   "h": 1500,
+   "kicker": "Pray · Psalm 91",
+   "headline": "How to pray Psalm 91.",
+   "headline_em": "Psalm 91.",
+   "leadin": "Pray it for someone else by putting their name in:",
+   "quote": "He will cover you with his feathers. Under his wings you will take refuge. His faithfulness is your shield and rampart.",
+   "ref": "Psalm 91:4",
+   "go_deeper": "Psalm 91 meaning",
+   "bg": 14000,
+   "verify": [
+    [
+     "PSA",
+     91,
+     4,
+     4
+    ]
+   ]
+  }
+ ],
+ "carousels": [
+  {
+   "id": "c-lords-prayer",
+   "kicker": "The Lord’s Prayer",
+   "go_deeper": "The Lord’s Prayer, line by line",
+   "bg": 38000,
+   "slides": [
+    {
+     "kind": "cover",
+     "headline": "What does the Lord’s Prayer mean?",
+     "headline_em": "mean?",
+     "sub": "The prayer Jesus taught, line by line."
+    },
+    {
+     "kind": "verse",
+     "n": 1,
+     "quote": "Our Father in heaven, may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it is in heaven.",
+     "ref": "Matthew 6:9–10",
+     "note": "Prayer starts with who God is before it turns to what we need.",
+     "verify": [
+      [
+       "MAT",
+       6,
+       9,
+       10
+      ]
+     ]
+    },
+    {
+     "kind": "verse",
+     "n": 2,
+     "quote": "Give us today our daily bread.",
+     "ref": "Matthew 6:11",
+     "note": "A request for what we need today, not a lifetime supply.",
+     "verify": [
+      [
+       "MAT",
+       6,
+       11,
+       11
+      ]
+     ],
+     "size": 64
+    },
+    {
+     "kind": "verse",
+     "n": 3,
+     "quote": "Forgive us our debts, as we also forgive our debtors.",
+     "ref": "Matthew 6:12",
+     "note": "We receive God’s forgiveness, and we extend it to others.",
+     "verify": [
+      [
+       "MAT",
+       6,
+       12,
+       12
+      ]
+     ],
+     "size": 64
+    },
+    {
+     "kind": "verse",
+     "n": 4,
+     "quote": "Bring us not into temptation, but deliver us from the evil one. For yours is the Kingdom, the power, and the glory forever. Amen.",
+     "ref": "Matthew 6:13",
+     "note": "The prayer ends where it began: with God’s greatness.",
+     "verify": [
+      [
+       "MAT",
+       6,
+       13,
+       13
+      ]
+     ]
+    },
+    {
+     "kind": "text",
+     "n": 5,
+     "heading": "Pray it slowly.",
+     "body": [
+      "Pause after each line and let it sink in.",
+      "Use it as an outline. After each line, add your own words."
+     ]
+    },
+    {
+     "kind": "end",
+     "close": "Try it tonight, one line at a time."
+    }
+   ],
+   "link": "https://worshiproom.com/guides/the-lords-prayer",
+   "sizes": [
+    "ig"
+   ]
+  }
+ ],
+ "posts": [
+  {
+   "id": "2026-W49-ig-01",
+   "channel": "instagram",
+   "media": "i-ig-jeremiah-29-11",
+   "when": "2026-12-01T12:00:00-06:00",
+   "when_label": "Tue Dec 1, 12:00 PM CT",
+   "link": "https://worshiproom.com/guides/jeremiah-29-11-meaning",
+   "purpose": "save",
+   "experiment": {
+    "name": "ig-feed-format",
+    "arm": "image"
+   },
+   "ig_type": "post",
+   "alt": "Verse image on a deep purple galaxy background. Label: Jeremiah 29:11 meaning. Heading: A promise for a long season. On a parchment card: It came with news that the exile would last seventy years. “For I know the thoughts that I think toward you,” says Yahweh, “thoughts of peace, and not of evil, to give you hope and a future.” Jeremiah 29:11. Footer: Go deeper: Jeremiah 29:11 meaning and context. Worship Room, worshiproom.com.",
+   "caption": "What does Jeremiah 29:11 really mean? Jeremiah 29:11: “For I know the thoughts that I think toward you,” says Yahweh, “thoughts of peace, and not of evil, to give you hope and a future.”\n\nIt was first written to exiles in Babylon, and it came with news that the exile would last seventy years. It doesn’t promise quick relief; it reveals God’s good intentions for His people, even in a long, hard season. Save this for a season of waiting.\n\nJeremiah 29:11 in context, from Worship Room: worshiproom.com/guides/jeremiah-29-11-meaning\n\n#jeremiah2911 #bibleverse #hope #advent"
+  },
+  {
+   "id": "2026-W49-tt-01",
+   "channel": "tiktok",
+   "media": "v-peace-john-14-27",
+   "when": "2026-12-02T19:30:00-06:00",
+   "when_label": "Wed Dec 2, 7:30 PM CT",
+   "link": "https://worshiproom.com/guides/bible-verses-about-peace",
+   "purpose": "discover",
+   "experiment": {
+    "name": "tt-pace",
+    "arm": "fast"
+   },
+   "caption": "What kind of peace does Jesus give? John 14:27: “Peace I leave with you. My peace I give to you; not as the world gives, I give to you. Don’t let your heart be troubled, neither let it be fearful.” Jesus said this the night before the cross. His peace held even then. He doesn’t promise a trouble-free life; He promises peace in Him while trouble is still real. More Bible verses about peace, from Worship Room: worshiproom.com/guides/bible-verses-about-peace #bibleverses #peace #advent #christiantiktok"
+  },
+  {
+   "id": "2026-W49-pin-01",
+   "channel": "pinterest",
+   "media": "pin-peace-of-mind",
+   "when": "2026-12-05T20:00:00-06:00",
+   "when_label": "Sat Dec 5, 8:00 PM CT",
+   "link": "https://worshiproom.com/guides/bible-verses-about-peace",
+   "purpose": "visit",
+   "title": "A Bible Verse for Peace of Mind (Isaiah 26:3)",
+   "board": "Bible Verses for Hard Days",
+   "alt": "Verse pin on a deep purple, starry galaxy background. Label: Bible verses about peace. Heading: A Bible verse for peace of mind. On a parchment card: Perfect peace, literally “peace, peace” in Hebrew, for a mind that stays on God. “You will keep whoever’s mind is steadfast in perfect peace, because he trusts in you.” Isaiah 26:3. Footer: Go deeper: Bible verses about peace. Worship Room, worshiproom.com.",
+   "caption": "What is a Bible verse for peace of mind? Isaiah 26:3 is a favorite: “You will keep whoever’s mind is steadfast in perfect peace, because he trusts in you.” Perfect peace, literally “peace, peace” in Hebrew, for a mind that stays on God. Worship Room’s guide gathers Bible verses about peace: the peace Jesus gives, the peace of God that guards your heart and thoughts, and peace to rest in, with a short prayer for peace."
+  },
+  {
+   "id": "2026-W49-tt-02",
+   "channel": "tiktok",
+   "media": "v-morning-psalm-5-3",
+   "when": "2026-12-06T19:30:00-06:00",
+   "when_label": "Sun Dec 6, 7:30 PM CT",
+   "link": "https://worshiproom.com/guides/morning-prayer",
+   "purpose": "discover",
+   "experiment": {
+    "name": "tt-pace",
+    "arm": "standard"
+   },
+   "caption": "What to pray in the morning. Psalm 5:3: “Yahweh, in the morning you will hear my voice. In the morning I will lay my requests before you, and will watch expectantly.” Morning prayer is as old as the Psalms: lay your requests before God and watch expectantly. A prayer for tomorrow morning: Lord, I give You this day. Guide my steps and help me notice You today. Amen. More short morning prayers, from Worship Room: worshiproom.com/guides/morning-prayer #morningprayer #prayer #bibleverse #christiantiktok"
+  },
+  {
+   "id": "2026-W49-ig-02",
+   "channel": "instagram",
+   "media": "c-lords-prayer",
+   "when": "2026-12-06T12:00:00-06:00",
+   "when_label": "Sun Dec 6, 12:00 PM CT",
+   "link": "https://worshiproom.com/guides/the-lords-prayer",
+   "purpose": "save",
+   "experiment": {
+    "name": "ig-feed-format",
+    "arm": "carousel"
+   },
+   "ig_type": "post",
+   "caption": "What does the Lord’s Prayer mean? The prayer Jesus taught His disciples in Matthew 6:9–13, line by line.\n\n“Our Father in heaven, may your name be kept holy.” Prayer starts with who God is before it turns to what we need.\n\n“Give us today our daily bread.” A request for what we need today, not a lifetime supply.\n\n“Forgive us our debts, as we also forgive our debtors.” We receive God’s forgiveness, and we extend it to others.\n\nPray it slowly. Pause after each line and let it sink in. Save this for tonight.\n\nThe full words and meaning, from Worship Room: worshiproom.com/guides/the-lords-prayer\n\n#lordsprayer #prayer #bible"
+  },
+  {
+   "id": "2026-W49-pin-02",
+   "channel": "pinterest",
+   "media": "pin-psalm-91",
+   "when": "2026-12-06T20:00:00-06:00",
+   "when_label": "Sun Dec 6, 8:00 PM CT",
+   "link": "https://worshiproom.com/guides/psalm-91-meaning",
+   "purpose": "visit",
+   "title": "How to Pray Psalm 91, the Protection Psalm",
+   "board": "Prayers",
+   "alt": "Verse pin on a deep purple, starry galaxy background. Label: Pray · Psalm 91. Heading: How to pray Psalm 91. On a parchment card: Pray it for someone else by putting their name in: “He will cover you with his feathers. Under his wings you will take refuge. His faithfulness is your shield and rampart.” Psalm 91:4. Footer: Go deeper: Psalm 91 meaning. Worship Room, worshiproom.com.",
+   "caption": "How to pray Psalm 91: pray verse 2 out loud as a declaration of trust, name your fears at verses 5–6 and hand each one to God, pray verse 4 for someone else by putting their name in, and end with verse 15, God’s promise to answer and to be with you in trouble. Psalm 91 isn’t a promise that nothing bad will happen; it’s a promise that God is a refuge in danger and is with His people in trouble. Worship Room’s guide has the full text of Psalm 91 and what it means, verse by verse."
+  }
+ ]
+}
