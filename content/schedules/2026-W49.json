@@ -17,7 +17,8 @@
   "guide": "jeremiah-29-11-meaning",
   "tracked_link": "https://worshiproom.com/guides/jeremiah-29-11-meaning?utm_source=instagram&utm_medium=social&utm_campaign=2026-W49-pack&utm_content=2026-W49-ig-01&utm_term=jeremiah-29-11-meaning",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-W49/i-ig-jeremiah-29-11.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-W49/i-ig-jeremiah-29-11.png",
+  "buffer_id": "6b073e484b0d1382c82ac952"
  },
  {
   "id": "2026-W49-tt-01",
@@ -37,7 +38,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-W49/v-peace-john-14-27.mp4",
   "thumbnail_ms": 15219,
-  "seconds": 19.32
+  "seconds": 19.32,
+  "buffer_id": "6b073e6479540b3bd674da17"
  },
  {
   "id": "2026-W49-pin-01",
@@ -54,7 +56,8 @@
   "guide": "bible-verses-about-peace",
   "tracked_link": "https://worshiproom.com/guides/bible-verses-about-peace?utm_source=pinterest&utm_medium=social&utm_campaign=2026-W49-pack&utm_content=2026-W49-pin-01&utm_term=bible-verses-about-peace",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-W49/pin-peace-of-mind.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-W49/pin-peace-of-mind.png",
+  "buffer_id": "6b073e6437bb564f6765b29d"
  },
  {
   "id": "2026-W49-ig-02",
@@ -102,7 +105,8 @@
     "url": "https://worshiproomapp.github.io/social/media/2026-W49/c-lords-prayer-ig-07.png",
     "alt": "Slide 7 of 7. Purple galaxy background. Worship Room. Try it tonight, one line at a time. Go deeper: The Lord’s Prayer, line by line. worshiproom.com."
    }
-  ]
+  ],
+  "buffer_id": "6b073e65a7531375d604c188"
  },
  {
   "id": "2026-W49-tt-02",
@@ -122,7 +126,8 @@
   "kind": "video",
   "url": "https://worshiproomapp.github.io/social/media/2026-W49/v-morning-psalm-5-3.mp4",
   "thumbnail_ms": 15270,
-  "seconds": 28.87
+  "seconds": 28.87,
+  "buffer_id": "6b073e6679540b3bd674dcc5"
  },
  {
   "id": "2026-W49-pin-02",
@@ -139,6 +144,7 @@
   "guide": "psalm-91-meaning",
   "tracked_link": "https://worshiproom.com/guides/psalm-91-meaning?utm_source=pinterest&utm_medium=social&utm_campaign=2026-W49-pack&utm_content=2026-W49-pin-02&utm_term=psalm-91-meaning",
   "kind": "image",
-  "url": "https://worshiproomapp.github.io/social/media/2026-W49/pin-psalm-91.png"
+  "url": "https://worshiproomapp.github.io/social/media/2026-W49/pin-psalm-91.png",
+  "buffer_id": "6b073e67a7531375d604c267"
  }
 ]
